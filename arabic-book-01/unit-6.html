@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الوحدة السادسة: الصَّلَاة — 礼拜 | العربية بين يديك</title>
+  <link rel="stylesheet" href="css/arabic-styles.css">
+  <style>
+    .dialogue-speaker{display:inline-block;background:var(--ar-green);color:#fff;padding:1px 10px;border-radius:4px;font-size:.78rem;font-weight:600;margin-right:8px;}
+    .cultural-highlight{background:linear-gradient(135deg,#FFF8E1,#FFECB3);padding:16px 20px;border-radius:var(--ar-radius);margin:16px 0;border:1px solid var(--ar-gold);}
+    .cultural-highlight h5{color:var(--ar-gold-dark);font-size:.92rem;margin-bottom:8px;}
+    .arabic-numbers-row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:20px 0;}
+    .arabic-numbers-row .num-item{text-align:center;cursor:pointer;transition:var(--ar-transition);padding:12px 16px;border-radius:var(--ar-radius-sm);background:var(--ar-bg-card);border:1px solid var(--ar-border-light);min-width:80px;}
+    .arabic-numbers-row .num-item:hover{border-color:var(--ar-green);background:var(--ar-green-pale);transform:translateY(-2px);}
+    .arabic-numbers-row .digit{font-size:1.3rem;font-weight:700;color:var(--ar-blue-dark);}
+    .arabic-numbers-row .ar{font-family:var(--font-arabic-heading);font-size:1.5rem;color:var(--ar-green-dark);}
+    .arabic-numbers-row .translit{font-size:.72rem;color:var(--ar-text-light);font-style:italic;}
+    .sound-practice{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0;}
+    .sound-practice .sound-item{background:var(--ar-bg-card);border:2px solid var(--ar-border);border-radius:var(--ar-radius-sm);padding:12px 20px;cursor:pointer;transition:var(--ar-transition);font-family:var(--font-arabic);font-size:1.3rem;color:var(--ar-text-dark);text-align:center;min-width:80px;}
+    .sound-practice .sound-item:hover{border-color:var(--ar-green);background:var(--ar-green-pale);transform:translateY(-2px);}
+    .writing-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:12px;margin:16px 0;}
+    .writing-grid .letter-card{background:var(--ar-bg-card);border:1px solid var(--ar-border);border-radius:var(--ar-radius-sm);padding:16px 8px;text-align:center;cursor:pointer;transition:var(--ar-transition);}
+    .writing-grid .letter-card:hover{border-color:var(--ar-gold);box-shadow:0 4px 12px var(--ar-shadow);transform:translateY(-2px);}
+    .writing-grid .letter-card .letter-ar{font-family:var(--font-arabic-heading);font-size:2rem;color:var(--ar-green-dark);line-height:1.3;}
+    .writing-grid .letter-card .letter-tx{font-size:.75rem;color:var(--ar-text-light);margin-top:4px;}
+    .grammar-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.9rem;font-family:var(--font-arabic);}
+    .grammar-table td,.grammar-table th{padding:8px 12px;border:1px solid var(--ar-border);vertical-align:middle;text-align:center;}
+    .grammar-table th{background:var(--ar-green);color:#fff;font-weight:600;font-family:var(--font-chinese);}
+    .grammar-table .ar{font-size:1.15rem;direction:rtl;}
+    @media(max-width:600px){.writing-grid{grid-template-columns:repeat(4,1fr);}}
+  </style>
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <nav class="top-nav">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">ع</span><span>العربية بين يديك</span></a>
+    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <ul class="nav-links"><li><a href="index.html">首页</a></li><li><a href="unit-1.html">第一单元</a></li>
+      <li><a href="unit-2.html">第二单元</a></li>
+      <li><a href="unit-3.html">第三单元</a></li>
+      <li><a href="unit-4.html">第四单元</a></li>
+      <li><a href="unit-5.html">第五单元</a></li>
+      <li><a href="unit-6.html" class="active">第六单元</a></li>
+      <li><a href="unit-7.html">第七单元</a></li>
+      <li><a href="unit-8.html">第八单元</a></li></ul>
+  </nav>
+  <header class="unit-hero">
+    <div class="unit-hero-content">
+      <div class="level-badge"><span>📘</span><span>المستوى المبتدئ · Beginner A1</span></div>
+      <h1>الصَّلَاة</h1>
+      <p class="unit-subtitle">Prayer · 礼拜</p>
+      <p class="unit-chinese-title">第六单元：礼拜名称、时间、清真寺相关表达</p>
+      <div class="unit-tags"><span class="tag">💬 3 段对话</span>
+      <span class="tag">📖 30+ 核心词汇</span>
+      <span class="tag">📚 كم·كم الساعة·لا بد</span>
+      <span class="tag">🔊 字母 ص/س 区分</span>
+      <span class="tag">📖 序数词 1-12</span></div>
+    </div>
+  </header>
+
+  <section class="page-section">
+    <h2><span class="section-icon">💬</span> 核心对话 · الحِوَارَات</h2>
+<p style="margin-bottom:16px;color:var(--ar-text-light);font-size:0.88rem;">点击阿拉伯语句子即可收听发音 🔊</p>
+    <div class="content-card">
+      <h3>对话 1 — 几点了？· كَمِ السَّاعَةُ؟</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">问时间与礼拜时间</p>
+<table class="dialog-table"><thead><tr><th>角色</th><th>العربية</th><th>中文</th></tr></thead><tbody>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="كَمِ السَّاعَةُ الْآنَ؟">كَمِ السَّاعَةُ الْآنَ؟</span></td>
+            <td class="zh">现在几点了？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="السَّاعَةُ الْوَاحِدَةُ.">السَّاعَةُ الْوَاحِدَةُ.</span></td>
+            <td class="zh">一点钟。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="مَتَى صَلَاةُ الظُّهْرِ؟">مَتَى صَلَاةُ الظُّهْرِ؟</span></td>
+            <td class="zh">晌礼是什么时候？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="صَلَاةُ الظُّهْرِ السَّاعَةَ الثَّانِيَةَ عَشْرَةَ.">صَلَاةُ الظُّهْرِ السَّاعَةَ الثَّانِيَةَ عَشْرَةَ.</span></td>
+            <td class="zh">晌礼在十二点。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="شُكْرًا، لَا بُدَّ أَنْ أَذْهَبَ إِلَى الْمَسْجِدِ.">شُكْرًا، لَا بُدَّ أَنْ أَذْهَبَ إِلَى الْمَسْجِدِ.</span></td>
+            <td class="zh">谢谢，我必须去清真寺了。</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="content-card">
+      <h3>对话 2 — 你在做什么礼拜？· أَيُّ صَلَاةٍ؟</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">礼拜名称</p>
+<table class="dialog-table"><thead><tr><th>角色</th><th>العربية</th><th>中文</th></tr></thead><tbody>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="أَيُّ صَلَاةٍ هَذِهِ؟">أَيُّ صَلَاةٍ هَذِهِ؟</span></td>
+            <td class="zh">这是什么礼拜？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="هَذِهِ صَلَاةُ الْعَصْرِ.">هَذِهِ صَلَاةُ الْعَصْرِ.</span></td>
+            <td class="zh">这是晡礼。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="كَمْ صَلَاةً فِي الْيَوْمِ؟">كَمْ صَلَاةً فِي الْيَوْمِ؟</span></td>
+            <td class="zh">每天有几次礼拜？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="خَمْسُ صَلَوَاتٍ: الْفَجْرُ وَالظُّهْرُ وَالْعَصْرُ وَالْمَغْرِبُ وَالْعِشَاءُ.">خَمْسُ صَلَوَاتٍ: الْفَجْرُ وَالظُّهْرُ وَالْعَصْرُ وَالْمَغْرِبُ وَالْعِشَاءُ.</span></td>
+            <td class="zh">五次：晨礼、晌礼、晡礼、昏礼、宵礼。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="بَارَكَ اللهُ فِيكَ.">بَارَكَ اللهُ فِيكَ.</span></td>
+            <td class="zh">愿真主赐福于你。</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="content-card">
+      <h3>对话 3 — 在清真寺 · فِي الْمَسْجِد</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">清真寺场景</p>
+<table class="dialog-table"><thead><tr><th>角色</th><th>العربية</th><th>中文</th></tr></thead><tbody>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="هَلْ تُصَلِّي فِي الْمَسْجِدِ كُلَّ يَوْمٍ؟">هَلْ تُصَلِّي فِي الْمَسْجِدِ كُلَّ يَوْمٍ؟</span></td>
+            <td class="zh">你每天都在清真寺做礼拜吗？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="نَعَم، أُصَلِّي الصَّلَوَاتِ الْخَمْسَ فِي الْمَسْجِدِ.">نَعَم، أُصَلِّي الصَّلَوَاتِ الْخَمْسَ فِي الْمَسْجِدِ.</span></td>
+            <td class="zh">是的，我在清真寺做五番礼拜。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="أَيْنَ الْمَسْجِدُ؟">أَيْنَ الْمَسْجِدُ؟</span></td>
+            <td class="zh">清真寺在哪？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="الْمَسْجِدُ قَرِيبٌ مِنْ بَيْتِي.">الْمَسْجِدُ قَرِيبٌ مِنْ بَيْتِي.</span></td>
+            <td class="zh">清真寺离我家很近。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="هَيَّا نَذْهَبُ إِلَى الْمَسْجِدِ مَعًا!">هَيَّا نَذْهَبُ إِلَى الْمَسْجِدِ مَعًا!</span></td>
+            <td class="zh">走，我们一起去清真寺吧！</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">📖</span> 核心词汇 · المُفْرَدَات</h2>
+    <div class="content-card">
+      <h3>礼拜名称 · أَسْمَاء الصَّلَوَات</h3>
+      
+<table class="vocab-table"><thead><tr><th>العربية</th><th>转写</th><th>中文释义</th></tr></thead><tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="صَلَاة">صَلَاة</span></td>
+            <td class="translit">ṣalāh</td>
+            <td class="zh">礼拜</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="الْفَجْر">الْفَجْر</span></td>
+            <td class="translit">al-fajr</td>
+            <td class="zh">晨礼</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="الظُّهْر">الظُّهْر</span></td>
+            <td class="translit">aẓ-ẓuhr</td>
+            <td class="zh">晌礼</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="الْعَصْر">الْعَصْر</span></td>
+            <td class="translit">al-ʿaṣr</td>
+            <td class="zh">晡礼</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="الْمَغْرِب">الْمَغْرِب</span></td>
+            <td class="translit">al-maghrib</td>
+            <td class="zh">昏礼</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="الْعِشَاء">الْعِشَاء</span></td>
+            <td class="translit">al-ʿishāʾ</td>
+            <td class="zh">宵礼</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="جُمُعَة">جُمُعَة</span></td>
+            <td class="translit">jumuʿah</td>
+            <td class="zh">聚礼日/星期五</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="أَذَان">أَذَان</span></td>
+            <td class="translit">adhān</td>
+            <td class="zh">宣礼</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مَسْجِد">مَسْجِد</span></td>
+            <td class="translit">masjid</td>
+            <td class="zh">清真寺</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مُصَلَّى">مُصَلَّى</span></td>
+            <td class="translit">muṣallā</td>
+            <td class="zh">礼拜处</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="content-card">
+      <h3>宗教相关 · مُفْرَدَات دِينِيَّة</h3>
+      
+<table class="vocab-table"><thead><tr><th>العربية</th><th>转写</th><th>中文释义</th></tr></thead><tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="اللهُ أَكْبَرُ">اللهُ أَكْبَرُ</span></td>
+            <td class="translit">Allāhu akbar</td>
+            <td class="zh">真主至大</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بَارَكَ اللهُ فِيكَ">بَارَكَ اللهُ فِيكَ</span></td>
+            <td class="translit">bāraka Allāhu fīka</td>
+            <td class="zh">愿真主赐福于你</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="لا بُدَّ">لا بُدَّ</span></td>
+            <td class="translit">lā budda</td>
+            <td class="zh">必须/一定</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="قَرِيب">قَرِيب</span></td>
+            <td class="translit">qarīb</td>
+            <td class="zh">近的</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بَعِيد">بَعِيد</span></td>
+            <td class="translit">baʿīd</td>
+            <td class="zh">远的</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مَعًا">مَعًا</span></td>
+            <td class="translit">maʿan</td>
+            <td class="zh">一起</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="دَائِمًا">دَائِمًا</span></td>
+            <td class="translit">dāʾiman</td>
+            <td class="zh">总是</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="قِبْلَة">قِبْلَة</span></td>
+            <td class="translit">qiblah</td>
+            <td class="zh">朝向/克尔白方向</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="content-card">
+      <h3>时间与计数 · وَقْت وَعَدَد</h3>
+      
+<table class="vocab-table"><thead><tr><th>العربية</th><th>转写</th><th>中文释义</th></tr></thead><tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="السَّاعَة">السَّاعَة</span></td>
+            <td class="translit">as-sāʿah</td>
+            <td class="zh">点钟</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="دَقِيقَة">دَقِيقَة</span></td>
+            <td class="translit">daqīqah</td>
+            <td class="zh">分钟</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="كَمِ السَّاعَةُ؟">كَمِ السَّاعَةُ؟</span></td>
+            <td class="translit">kami as-sāʿah?</td>
+            <td class="zh">几点了？</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="كَمْ">كَمْ</span></td>
+            <td class="translit">kam</td>
+            <td class="zh">多少/几</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="قَبْلَ">قَبْلَ</span></td>
+            <td class="translit">qabla</td>
+            <td class="zh">在……之前</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بَعْدَ">بَعْدَ</span></td>
+            <td class="translit">baʿda</td>
+            <td class="zh">在……之后</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="كُلَّ">كُلَّ</span></td>
+            <td class="translit">kulla</td>
+            <td class="zh">每个</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="الْآن">الْآن</span></td>
+            <td class="translit">al-ʾān</td>
+            <td class="zh">现在</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">📚</span> 语法详解 · التَّرَاكِيب النَّحْوِيَّة</h2>
+    <div class="grammar-box">
+      <h4>📌 语法点：«كَمْ» — 问数量</h4>
+      <table class="grammar-table"><thead><tr><th>每天几次礼拜？</th><th>五次礼拜。</th></tr></thead><tbody><tr><td class="ar"><span class="click-speak" data-ar="كَمْ صَلَاةً فِي الْيَوْمِ؟">كَمْ صَلَاةً فِي الْيَوْمِ؟</span></td><td class="ar"><span class="click-speak" data-ar="خَمْسُ صَلَوَاتٍ.">خَمْسُ صَلَوَاتٍ.</span></td></tr></tbody></table>
+            <div class="explanation-note">
+        <strong>📝 中文解析：</strong>«كَمْ」问'多少/几'，后面接的名词用宾格单数形式。回答用数量词+复数。كَم 是阿拉伯语中最重要的数量疑问词。
+      </div>
+    </div>
+    <div class="grammar-box">
+      <h4>📌 语法点：«كَمِ السَّاعَةُ؟» — 问时间</h4>
+      <table class="grammar-table"><thead><tr><th>几点了？</th><th>三点钟。</th></tr></thead><tbody><tr><td class="ar"><span class="click-speak" data-ar="كَمِ السَّاعَةُ؟">كَمِ السَّاعَةُ؟</span></td><td class="ar"><span class="click-speak" data-ar="السَّاعَةُ الثَّالِثَةُ.">السَّاعَةُ الثَّالِثَةُ.</span></td></tr></tbody></table>
+            <div class="explanation-note">
+        <strong>📝 中文解析：</strong>问几点用 «كَمِ السَّاعَةُ؟»。注意：كَمِ 在这里带 كسرة 结尾。回答：السَّاعَةُ + 序数词（阴）。السَّاعَةُ 是阴性名词。
+      </div>
+    </div>
+    <div class="grammar-box">
+      <h4>📌 语法点：لَا بُدَّ — 表达'必须/一定'</h4>
+      <table class="grammar-table"><thead><tr><th>我必须去清真寺。</th></tr></thead><tbody><tr><td class="ar"><span class="click-speak" data-ar="لَا بُدَّ أَنْ أَذْهَبَ إِلَى الْمَسْجِدِ.">لَا بُدَّ أَنْ أَذْهَبَ إِلَى الْمَسْجِدِ.</span></td></tr></tbody></table>
+            <div class="explanation-note">
+        <strong>📝 中文解析：</strong>«لَا بُدَّ」字面'不免'，意为'必须/一定'，后接 أَنْ + 动词虚拟式。这是阿拉伯语表达'必须/应该'的重要句型。
+      </div>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">🔢</span> 数字练习 · الأَعْدَاد</h2>
+    <div class="content-card">
+      <h3>🎯 数字 —</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">点击数字收听发音 🔊</p>
+<div class="arabic-numbers-row">
+        <div class="num-item" onclick="speak('الْوَاحِدَة')">
+          <div class="digit">١</div>
+          <div class="ar">الْوَاحِدَة</div>
+          <div class="translit">al-wāḥidah (1:00)</div>
+        </div>
+        <div class="num-item" onclick="speak('الثَّانِيَة')">
+          <div class="digit">٢</div>
+          <div class="ar">الثَّانِيَة</div>
+          <div class="translit">ath-thāniyah (2:00)</div>
+        </div>
+        <div class="num-item" onclick="speak('الثَّالِثَة')">
+          <div class="digit">٣</div>
+          <div class="ar">الثَّالِثَة</div>
+          <div class="translit">ath-thālithah (3:00)</div>
+        </div>
+        <div class="num-item" onclick="speak('الرَّابِعَة')">
+          <div class="digit">٤</div>
+          <div class="ar">الرَّابِعَة</div>
+          <div class="translit">ar-rābiʿah (4:00)</div>
+        </div>
+        <div class="num-item" onclick="speak('الْخَامِسَة')">
+          <div class="digit">٥</div>
+          <div class="ar">الْخَامِسَة</div>
+          <div class="translit">al-khāmisah (5:00)</div>
+        </div>
+        <div class="num-item" onclick="speak('الثَّانِيَةَ عَشْرَة')">
+          <div class="digit">١٢</div>
+          <div class="ar">الثَّانِيَةَ عَشْرَة</div>
+          <div class="translit">ath-thāniyata ʿasharah (12:00)</div>
+        </div>
+        </div>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">🎧</span> 语音训练 · الأَصْوَات</h2>
+    <div class="content-card">
+      <h3>🔊 字母 «ص» (صَاد (Ṣād))</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">发音要领</p>
+<div class="cultural-highlight"><h5>🎯 发音要领</h5><p style="font-size:0.9rem;line-height:1.8;">«ص» 是咽化 s——舌头后缩靠近咽部，舌尖抵住下齿龈发出'粗重版的s'。与 «س»（普通 s）形成鲜明对比。练习对：سيارة（汽车，س）vs صلاة（礼拜，ص）。</p></div>
+      <p style="margin:12px 0 8px;font-weight:600;">🔹 请跟读以下含 «ص» 的单词：</p>
+      <div class="sound-practice">
+        <div class="sound-item" onclick="speak('صَلَاة')">صَلَاة</div>
+        <div class="sound-item" onclick="speak('صُورَة')">صُورَة</div>
+        <div class="sound-item" onclick="speak('صَبَاح')">صَبَاح</div>
+        <div class="sound-item" onclick="speak('صَدِيق')">صَدِيق</div>
+        <div class="sound-item" onclick="speak('سَاعَة')">سَاعَة</div>
+        <div class="sound-item" onclick="speak('سَمَك')">سَمَك</div>
+        <div class="sound-item" onclick="speak('سَرِير')">سَرِير</div>
+        <div class="sound-item" onclick="speak('مَسْجِد')">مَسْجِد</div>
+      </div>
+    </div><h4 style="margin-top:20px;">📖 选自《黄牛章》</h4>
+      <div class="verse-box">
+        <div class="ar"><span class="click-speak" data-ar="حَافِظُوا عَلَى الصَّلَوَاتِ وَالصَّلَاةِ الْوُسْطَىٰ">حَافِظُوا عَلَى الصَّلَوَاتِ وَالصَّلَاةِ الْوُسْطَىٰ</span></div>
+        <div class="zh">你们当谨守拜功，和中间的拜功。（《黄牛章》2:238）</div>
+      </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">☪</span> 文化注释 · مُلَاحَظَات ثَقَافِيَّة</h2>
+    <div class="cultura-box">
+      <h4>🏺 五番礼拜（الصلوات الخمس）</h4>
+      <p style="font-size:0.9rem;line-height:1.9;">礼拜是伊斯兰教五功（أركان الإسلام）之二。一日五次：فجر（日出前）、ظهر（正午后）、عصر（日落前）、مغرب（日落后）、عشاء（夜间）。每次礼拜前需做小净（وضوء），面向麦加方向（قبلة）。每周五的聚礼（صلاة الجمعة）尤为特殊。</p>
+    </div>
+    <div class="cultura-box">
+      <h4>🏺 清真寺的功能</h4>
+      <p style="font-size:0.9rem;line-height:1.9;">清真寺（مَسْجِد）不仅是礼拜场所，也是社区中心、教育场所和社交空间。先知时代的麦地那清真寺就是集政治、教育、社交于一体的综合中心。宣礼塔（مِئْذَنَة）发出的宣礼声（أذان）是伊斯兰城市的标志性声音。</p>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <div class="nav-buttons">
+    <a href="D:\workbuddy工作区\2026-07-05-17-02-23\arabic-book\unit-5.html" class="nav-btn nav-btn-secondary">← 上一单元 · الطَّعَامُ وَالشَّرَاب</a>
+    <a href="unit-7.html" class="nav-btn nav-btn-primary">下一单元 · الصَّلَاة →</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <p>العربية بين يديك · 阿拉伯语在你手中 · 第一册 第一部分</p>
+    <p style="margin-top:4px;">الوحدة السادسة: الصَّلَاة — 第六单元：礼拜</p>
+  </footer>
+  <script src="js/arabic-speech.js"></script>
+</body>
+</html>
