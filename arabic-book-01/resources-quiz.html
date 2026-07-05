@@ -14,7 +14,15 @@
     .quiz-item .opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
     .quiz-item .opts span{padding:6px 16px;background:var(--ar-bg-card);border:1px solid var(--ar-border);border-radius:20px;font-size:.88rem;cursor:default}
     .quiz-item .opts span.correct{background:var(--ar-green-pale);border-color:var(--ar-green);color:var(--ar-green-dark)}
-    .quiz-item .answer{margin-top:8px;font-size:.82rem;color:var(--ar-green)}
+    .quiz-item .answer{display:none;margin-top:8px;padding:8px 14px;background:var(--ar-green-pale);border-radius:6px;font-size:.9rem;color:var(--ar-green-dark)}
+    .quiz-item .answer.show{display:block}
+    .show-answer-btn{margin-top:8px;padding:4px 16px;background:transparent;border:1px dashed var(--ar-border);border-radius:20px;font-size:.78rem;cursor:pointer;color:var(--ar-text-light);transition:all .2s}
+    .show-answer-btn:hover{border-color:var(--ar-green);color:var(--ar-green);background:var(--ar-green-pale)}
+    .quiz-item .opts span{cursor:pointer;transition:all .2s}
+    .quiz-item .opts span:hover{border-color:var(--ar-green);background:var(--ar-green-pale)}
+    .quiz-item .opts span.chosen{border-color:var(--ar-green-dark);background:var(--ar-green-pale)}
+    .quiz-item .opts span.reveal-correct{border-color:var(--ar-green)!important;background:#c8f7c5!important;font-weight:700}
+    .quiz-item .opts span.reveal-user-wrong{border-color:var(--ar-terracotta)!important;background:#fdd!important;text-decoration:line-through}
     .grammar-topic{margin:24px 0;padding:16px 20px;background:var(--ar-bg-card);border:1px solid var(--ar-border-light);border-radius:var(--ar-radius)}
     .grammar-topic h3{color:var(--ar-green-dark);margin-bottom:6px}
     .grammar-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.9rem}
@@ -275,3 +283,43 @@
           <div class="answer">✅ 参考译文: 工作八点开始</div>
         </div>
     </div>
+
+  </section>
+  <footer>
+    <div class="footer-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <p>العربية بين يديك · 阿拉伯语在你手中 · 第一册 第一部分</p>
+    <p style="margin-top:4px">自测题 · 检验你的学习成果</p>
+<script>
+(function(){var qq=document.querySelectorAll('.quiz-item');var scores=[];
+qq.forEach(function(q,idx){
+  var opts=q.querySelectorAll('.opts span');
+  var correctIdx=parseInt(q.dataset.correct||-1);
+  var chosen=null;
+  opts.forEach(function(o,j){
+    o.addEventListener('click',function(){
+      if(this.classList.contains('reveal-correct')||this.classList.contains('reveal-user-wrong'))return;
+      opts.forEach(function(s){s.classList.remove('chosen')});
+      this.classList.add('chosen');
+      chosen=j;
+    });
+  });
+  var btn=q.querySelector('.show-answer-btn');
+  if(btn){
+    btn.addEventListener('click',function(){
+      if(correctIdx>=0){
+        opts.forEach(function(o,j){
+          if(j===correctIdx)o.classList.add('reveal-correct');
+          else if(j===chosen&&chosen!==correctIdx)o.classList.add('reveal-user-wrong');
+        });
+        if(chosen===correctIdx)scores.push(1);else scores.push(0);
+      }else{scores.push(-1)}
+      q.querySelector('.answer').classList.add('show');
+      btn.classList.add('revealed');
+    });
+  }
+});
+})();</script>
+  </footer>
+  <script src="js/arabic-speech.js"></script>
+</body>
+</html>
