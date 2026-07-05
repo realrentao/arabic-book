@@ -94,6 +94,7 @@
   // ===== 状态 =====
   let currentAudio = null;  // 当前正在播放的 Audio 对象
   let isPlaying = false;
+  let activeEl = null;      // 当前高亮的元素
 
   // ===== 查找音频路径 =====
   function findAudio(text) {
@@ -114,7 +115,7 @@
   }
 
   // ===== 播放音频 =====
-  function playArabic(text) {
+  function playArabic(text, el) {
     if (!text || !text.trim()) return;
     // 如果正在播放则先停止
     stopPlayback();
@@ -128,19 +129,24 @@
     const audio = new Audio(path);
     audio.preload = 'auto';
 
+    // 高亮当前元素
+    activeEl = el || null;
+    highlightEl(activeEl);
+
     audio.onplay = function () {
       isPlaying = true;
-      setUIState(true);
     };
     audio.onended = function () {
       isPlaying = false;
-      setUIState(false);
+      unhighlightEl(activeEl);
+      activeEl = null;
       currentAudio = null;
     };
     audio.onerror = function () {
       console.warn('[arabic-speech] 音频加载失败: ' + path);
       isPlaying = false;
-      setUIState(false);
+      unhighlightEl(activeEl);
+      activeEl = null;
       currentAudio = null;
     };
 
@@ -148,7 +154,8 @@
     audio.play().catch(function (err) {
       console.warn('[arabic-speech] 播放失败:', err);
       isPlaying = false;
-      setUIState(false);
+      unhighlightEl(activeEl);
+      activeEl = null;
       currentAudio = null;
     });
   }
@@ -161,22 +168,24 @@
       currentAudio = null;
     }
     isPlaying = false;
-    setUIState(false);
+    unhighlightEl(activeEl);
+    activeEl = null;
   }
 
-  // ===== UI状态 =====
-  function setUIState(playing) {
-    var els = document.querySelectorAll('.click-speak, .sound-item, .num-item');
-    for (var i = 0; i < els.length; i++) {
-      if (playing) {
-        els[i].style.opacity = '0.5';
-        els[i].style.pointerEvents = 'none';
-        els[i].style.cursor = 'default';
-      } else {
-        els[i].style.opacity = '';
-        els[i].style.pointerEvents = '';
-        els[i].style.cursor = '';
-      }
+  // ===== 高亮/取消高亮 =====
+  function highlightEl(el) {
+    if (el) {
+      el.classList.add('playing');
+      // 也给所在的行/卡片加微妙的背景
+      var row = el.closest('tr');
+      if (row) row.classList.add('audio-playing');
+    }
+  }
+  function unhighlightEl(el) {
+    if (el) {
+      el.classList.remove('playing');
+      var row = el.closest('tr');
+      if (row) row.classList.remove('audio-playing');
     }
   }
 
@@ -186,7 +195,25 @@
     for (var i = 0; i < els.length; i++) {
       els[i].addEventListener('click', function (e) {
         e.stopPropagation();
-        playArabic(this.getAttribute('data-ar'));
+        playArabic(this.getAttribute('data-ar'), this);
+      });
+    }
+    // 绑定 sound-item 和 num-item
+    var sounds = document.querySelectorAll('.sound-item, .num-item');
+    for (var j = 0; j < sounds.length; j++) {
+      sounds[j].addEventListener('click', function (e) {
+        e.stopPropagation();
+        // 这些元素通过 onclick 调用 speak()，我们拦截并传递元素
+        var text = this.getAttribute('data-ar');
+        if (!text) {
+          // 尝试从 onclick 中提取
+          var oc = this.getAttribute('onclick');
+          if (oc) {
+            var m = oc.match(/speak\('([^']+)'\)/);
+            if (m) text = m[1];
+          }
+        }
+        if (text) playArabic(text, this);
       });
     }
   }
