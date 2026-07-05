@@ -582,11 +582,11 @@ tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
 }
 
 .dialog-table th:nth-child(2) {
-  width: 55%;
+  width: 48%;
 }
 
 .dialog-table th:nth-child(3) {
-  width: 30%;
+  width: 37%;
 }
 
 .dialog-table td {
@@ -658,11 +658,11 @@ tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
 }
 
 .vocab-table th:first-child {
-  width: 45%;
+  width: 40%;
 }
 
 .vocab-table th:nth-child(2) {
-  width: 20%;
+  width: 22%;
 }
 
 .vocab-table td {
