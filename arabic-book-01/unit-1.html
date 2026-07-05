@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الوحدة الأولى: التَّعَارُف — 相识 | العربية بين يديك</title>
+  <link rel="stylesheet" href="css/arabic-styles.css">
+  <style>
+    /* 第一单元专用补充样式 */
+    .dialogue-speaker {
+      display: inline-block;
+      background: var(--ar-green);
+      color: white;
+      padding: 1px 10px;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-right: 8px;
+      font-family: var(--font-arabic-ui);
+    }
+    .cultural-highlight {
+      background: linear-gradient(135deg, #FFF8E1, #FFECB3);
+      padding: 16px 20px;
+      border-radius: var(--ar-radius);
+      margin: 16px 0;
+      border: 1px solid var(--ar-gold);
+    }
+    .cultural-highlight h5 {
+      color: var(--ar-gold-dark);
+      font-size: 0.92rem;
+      margin-bottom: 8px;
+    }
+    .practice-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0;
+    }
+    .practice-item {
+      background: var(--ar-bg-alt);
+      border-radius: var(--ar-radius-sm);
+      padding: 16px;
+      text-align: center;
+      transition: var(--ar-transition);
+      cursor: default;
+    }
+    .practice-item:hover {
+      background: var(--ar-green-pale);
+    }
+    .practice-item .ar {
+      font-family: var(--font-arabic);
+      font-size: 1.2rem;
+      direction: rtl;
+      color: var(--ar-text-dark);
+      margin-bottom: 4px;
+    }
+    .practice-item .zh {
+      font-size: 0.82rem;
+      color: var(--ar-text-light);
+    }
+    @media (max-width: 600px) {
+      .practice-row {
+        grid-template-columns: 1fr;
+      }
+    }
+    .grammar-table th {
+      background: var(--ar-green);
+      color: white;
+      padding: 8px 12px;
+      text-align: center;
+      font-size: 0.82rem;
+    }
+    .grammar-table td {
+      padding: 8px 12px;
+      border: 1px solid var(--ar-border);
+      text-align: center;
+    }
+    .arabic-numbers-row {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .arabic-numbers-row .num-item {
+      text-align: center;
+      cursor: pointer;
+      transition: var(--ar-transition);
+      padding: 12px 16px;
+      border-radius: var(--ar-radius-sm);
+      background: var(--ar-bg-card);
+      border: 1px solid var(--ar-border-light);
+      min-width: 80px;
+    }
+    .arabic-numbers-row .num-item:hover {
+      border-color: var(--ar-green);
+      background: var(--ar-green-pale);
+      transform: translateY(-2px);
+    }
+    .arabic-numbers-row .digit {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--ar-blue-dark);
+    }
+    .arabic-numbers-row .ar {
+      font-family: var(--font-arabic-heading);
+      font-size: 1.5rem;
+      direction: rtl;
+      color: var(--ar-green-dark);
+    }
+    .arabic-numbers-row .translit {
+      font-size: 0.72rem;
+      color: var(--ar-text-light);
+      font-style: italic;
+    }
+    .letter-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 16px 0;
+      border-radius: var(--ar-radius);
+      overflow: hidden;
+      box-shadow: 0 1px 4px var(--ar-shadow);
+    }
+    .letter-table th {
+      background: linear-gradient(135deg, var(--ar-green), var(--ar-blue));
+      color: white;
+      padding: 10px 12px;
+      font-size: 0.82rem;
+      text-align: center;
+    }
+    .letter-table td {
+      padding: 10px 12px;
+      text-align: center;
+      border-bottom: 1px solid var(--ar-border-light);
+      font-size: 0.88rem;
+    }
+    .letter-table .letter {
+      font-family: var(--font-arabic-heading);
+      font-size: 2rem;
+      direction: rtl;
+      color: var(--ar-green-dark);
+    }
+    .letter-table .letter-end {
+      font-family: var(--font-arabic-heading);
+      font-size: 1.8rem;
+      direction: rtl;
+      color: var(--ar-text-body);
+    }
+    .letter-table .letter-name {
+      font-family: var(--font-arabic-ui);
+      font-size: 0.85rem;
+      direction: rtl;
+    }
+    .letter-table tbody tr:hover {
+      background: var(--ar-green-pale);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 滚动进度条 -->
+  <div class="scroll-progress"></div>
+
+  <!-- 顶部导航 -->
+  <nav class="top-nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">ع</span>
+      <span>العربية بين يديك</span>
+    </a>
+    <button class="nav-toggle" aria-label="菜单">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="unit-1.html" class="active">第一单元</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Unit Hero ===== -->
+  <header class="unit-hero">
+    <div class="unit-hero-content">
+      <div class="level-badge">
+        <span>📘</span>
+        <span>المستوى المبتدئ · Beginner · 初级 A1</span>
+      </div>
+      <h1>التَّعَارُف</h1>
+      <p class="unit-subtitle">Getting Acquainted · 相识</p>
+      <p class="unit-chinese-title">第一单元：问候、自我介绍与国籍问答</p>
+      <div class="unit-tags">
+        <span class="tag">💬 6 段对话</span>
+        <span class="tag">📖 30+ 核心词汇</span>
+        <span class="tag">📚 指示代词·疑问词·数字</span>
+        <span class="tag">🔊 字母 خ 的发音</span>
+        <span class="tag">✍️ 字母 ا — ز 书写</span>
+        <span class="tag">☪ 伊斯兰问候礼仪</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Section 1: 核心对话 · Dialoghi ===== -->
+  <section class="page-section" id="dialoghi">
+    <h2><span class="section-icon">💬</span> 核心对话 · الحِوَارَات</h2>
+    <p style="margin-bottom:16px;color:var(--ar-text-light);font-size:0.88rem;">
+      点击阿拉伯语句子即可收听发音 🔊 | 本单元包含 6 段简短的问候与自我介绍对话
+    </p>
+
+    <!-- 对话1a -->
+    <div class="content-card">
+      <h3>🎯 对话 1 (أ) — 见面问候 · التحية</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">
+        两位男士之间最常用的伊斯兰问候方式
+      </p>
+      <table class="dialog-table">
+        <thead>
+          <tr><th>角色</th><th>العربية</th><th>中文翻译</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="السَّلَامُ عَلَيْكُمْ">السَّلَامُ عَلَيْكُمْ</span></td>
+            <td class="zh">祝你平安（愿主赐你平安）</td>
+          </tr>
+          <tr>
+            <td>أَحْمَد</td>
+            <td class="ar"><span class="click-speak" data-ar="وَعَلَيْكُمُ السَّلَامُ">وَعَلَيْكُمُ السَّلَامُ</span></td>
+            <td class="zh">也祝你平安</td>
+          </tr>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="كَيْفَ حَالُكَ؟">كَيْفَ حَالُكَ؟</span></td>
+            <td class="zh">你好吗？</td>
+          </tr>
+          <tr>
+            <td>أَحْمَد</td>
+            <td class="ar"><span class="click-speak" data-ar="بِخَيْرٍ، الْحَمْدُ لِلَّهِ.">بِخَيْرٍ، الْحَمْدُ لِلَّهِ.</span></td>
+            <td class="zh">很好，感谢真主。</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        「السَّلَامُ عَلَيْكُمْ」是伊斯兰世界最通用的问候语，字面意为"平安降临于你"。
+        回答「وَعَلَيْكُمُ السَّلَامُ」意为"平安也降临于你"。
+        「كَيْفَ حَالُكَ？」是"你好吗？"的男性形式；若问女性，则用「كَيْفَ حَالُكِ？」。
+      </div>
+    </div>
+
+    <!-- 对话1b -->
+    <div class="content-card">
+      <h3>🎯 对话 1 (ب) — 交换姓名 · تبادل الأسماء</h3>
+      <table class="dialog-table">
+        <thead>
+          <tr><th>角色</th><th>العربية</th><th>中文翻译</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>خَوْلَة</td>
+            <td class="ar"><span class="click-speak" data-ar="اسْمِي خَوْلَةُ. مَا اسْمُكِ؟">اسْمِي خَوْلَةُ. مَا اسْمُكِ؟</span></td>
+            <td class="zh">我叫郝莱。你叫什么名字？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="اسْمِي ...">اسْمِي ...</span></td>
+            <td class="zh">我叫……</td>
+          </tr>
+          <tr>
+            <td>خَوْلَة</td>
+            <td class="ar"><span class="click-speak" data-ar="بِخَيْرٍ وَالْحَمْدُ لِلَّهِ.">بِخَيْرٍ وَالْحَمْدُ لِلَّهِ.</span></td>
+            <td class="zh">很好，感谢真主。</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        「اسْمِي」意为"我的名字是……"，「مَا اسْمُكَ？」是"你叫什么名字？"（对男性）。
+        对女性说「مَا اسْمُكِ？」（结尾改为 kasra）。
+        「خَوْلَة」是阿拉伯女性常见名字，意为"美丽的羚羊"。
+      </div>
+    </div>
+
+    <!-- 对话2a -->
+    <div class="content-card">
+      <h3>🎯 对话 2 (أ) — 问国籍（男）· السؤال عن الجنسية</h3>
+      <table class="dialog-table">
+        <thead>
+          <tr><th>角色</th><th>العربية</th><th>中文翻译</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="السَّلَامُ عَلَيْكُمْ">السَّلَامُ عَلَيْكُمْ</span></td>
+            <td class="zh">祝你平安。</td>
+          </tr>
+          <tr>
+            <td>شَرِيف</td>
+            <td class="ar"><span class="click-speak" data-ar="وَعَلَيْكُمُ السَّلَامُ.">وَعَلَيْكُمُ السَّلَامُ.</span></td>
+            <td class="zh">也祝你平安。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="مِنْ أَيْنَ أَنْتَ؟">مِنْ أَيْنَ أَنْتَ؟</span></td>
+            <td class="zh">你从哪里来？</td>
+          </tr>
+          <tr>
+            <td>شَرِيف</td>
+            <td class="ar"><span class="click-speak" data-ar="أَنَا مِنْ بَاكِسْتَانَ.">أَنَا مِنْ بَاكِسْتَانَ.</span></td>
+            <td class="zh">我来自巴基斯坦。</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        「مِنْ أَيْنَ أَنْتَ？」（你从哪里来？）中的「مِنْ」是介词"从……"，
+        「أَيْنَ」是疑问词"哪里"，「أَنْتَ」是"你"（阳性）。
+        回答用「أَنَا مِنْ ...」（我来自……）。问女性时用「مِنْ أَيْنِ أَنْتِ？」。
+      </div>
+    </div>
+
+    <!-- 对话2b -->
+    <div class="content-card">
+      <h3>🎯 对话 2 (ب) — 问国籍（女）· السؤال عن الجنسية</h3>
+      <table class="dialog-table">
+        <thead>
+          <tr><th>角色</th><th>العربية</th><th>中文翻译</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>مَرْيَم</td>
+            <td class="ar"><span class="click-speak" data-ar="هَلْ أَنْتِ مِصْرِيَّةٌ؟">هَلْ أَنْتِ مِصْرِيَّةٌ؟</span></td>
+            <td class="zh">你是埃及人吗？（对女性）</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="لَا، أَنَا سُورِيَّةٌ. أَنَا مِنْ سُورِيَا.">لَا، أَنَا سُورِيَّةٌ. أَنَا مِنْ سُورِيَا.</span></td>
+            <td class="zh">不，我是叙利亚人。我来自叙利亚。</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        「هَلْ」是一般疑问词，相当于"吗"，回答用「نَعَم」（是的）或「لَا」（不）。
+        注意国籍的阴阳性：-«مِصْرِيٌّ»（埃及人，男性），«مِصْرِيَّةٌ»（埃及人，女性）；
+        «سُورِيٌّ» / «سُورِيَّةٌ»（叙利亚人）。女性以「ـَة / ـة」结尾。
+      </div>
+    </div>
+
+    <!-- 对话3a -->
+    <div class="content-card">
+      <h3>🎯 对话 3 (أ) — 欢迎问候 · الترحيب</h3>
+      <table class="dialog-table">
+        <thead>
+          <tr><th>角色</th><th>العربية</th><th>中文翻译</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="السَّلَامُ عَلَيْكُمْ">السَّلَامُ عَلَيْكُمْ</span></td>
+            <td class="zh">祝你平安。</td>
+          </tr>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="وَعَلَيْكُمُ السَّلَامُ. أَهْلًا وَسَهْلًا.">وَعَلَيْكُمُ السَّلَامُ. أَهْلًا وَسَهْلًا.</span></td>
+            <td class="zh">也祝你平安！欢迎欢迎！</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="شُكْرًا.">شُكْرًا.</span></td>
+            <td class="zh">谢谢。</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        「أَهْلًا وَسَهْلًا」是阿拉伯语中最常用的欢迎语，字面意为"家人般亲切、平坦顺利"，
+        相当于中文的"热烈欢迎"。对方回答通常也是「أَهْلًا بِك」或「شُكْرًا」。
+        「شُكْرًا」是"谢谢"，源自词根"ش-ك-ر"（感谢）。
+      </div>
+    </div>
+
+    <!-- 对话3b -->
+    <div class="content-card">
+      <h3>🎯 对话 3 (ب) — 告别 · الوداع</h3>
+      <table class="dialog-table">
+        <thead>
+          <tr><th>角色</th><th>العربية</th><th>中文翻译</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>هُدَى</td>
+            <td class="ar"><span class="click-speak" data-ar="مَعَ السَّلَامَةِ.">مَعَ السَّلَامَةِ.</span></td>
+            <td class="zh">再见（愿平安与你同在）。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="مَعَ السَّلَامَةِ.">مَعَ السَّلَامَةِ.</span></td>
+            <td class="zh">再见。</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        「مَعَ السَّلَامَةِ」是阿拉伯语中最常用的告别语，字面意为"与平安同在"。 
+        对方以同样的「مَعَ السَّلَامَةِ」回应。在更正式的场合也可用「إِلَى اللِّقَاءِ」（下次再见）。
+      </div>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== Section 2: 词汇表 · Vocabolario ===== -->
+  <section class="page-section" id="vocabolario">
+    <h2><span class="section-icon">📖</span> 核心词汇 · المُفْرَدَات</h2>
+
+    <div class="content-card">
+      <h3>🗣️ 问候与礼貌用语 · التحيات</h3>
+      <table class="vocab-table">
+        <thead>
+          <tr><th>العربية</th><th>转写</th><th>中文释义</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="السَّلَامُ عَلَيْكُمْ">السَّلَامُ عَلَيْكُمْ</span></td>
+            <td class="translit">as-salāmu ʿalaykum</td>
+            <td class="zh">你好（愿主赐你平安）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="وَعَلَيْكُمُ السَّلَامُ">وَعَلَيْكُمُ السَّلَامُ</span></td>
+            <td class="translit">wa ʿalaykumu s-salām</td>
+            <td class="zh">你好（回应）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="كَيْفَ حَالُكَ؟">كَيْفَ حَالُكَ؟</span></td>
+            <td class="translit">kayfa ḥāluka?</td>
+            <td class="zh">你好吗？（对男性）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="كَيْفَ حَالُكِ؟">كَيْفَ حَالُكِ؟</span></td>
+            <td class="translit">kayfa ḥāluki?</td>
+            <td class="zh">你好吗？（对女性）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بِخَيْرٍ">بِخَيْرٍ</span></td>
+            <td class="translit">biḫayr</td>
+            <td class="zh">很好，挺好的</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="الْحَمْدُ لِلَّهِ">الْحَمْدُ لِلَّهِ</span></td>
+            <td class="translit">al-ḥamdu lillāh</td>
+            <td class="zh">感谢真主</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="أَهْلًا وَسَهْلًا">أَهْلًا وَسَهْلًا</span></td>
+            <td class="translit">ahlan wa sahlan</td>
+            <td class="zh">欢迎欢迎</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="شُكْرًا">شُكْرًا</span></td>
+            <td class="translit">šukran</td>
+            <td class="zh">谢谢</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مَعَ السَّلَامَةِ">مَعَ السَّلَامَةِ</span></td>
+            <td class="translit">maʿa s-salāmah</td>
+            <td class="zh">再见</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-card">
+      <h3>👤 人称与自我介绍 · التعريف بالنفس</h3>
+      <table class="vocab-table">
+        <thead>
+          <tr><th>العربية</th><th>转写</th><th>中文释义</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="أَنَا">أَنَا</span></td>
+            <td class="translit">anā</td>
+            <td class="zh">我</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="أَنْتَ">أَنْتَ</span></td>
+            <td class="translit">anta</td>
+            <td class="zh">你（男性）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="أَنْتِ">أَنْتِ</span></td>
+            <td class="translit">anti</td>
+            <td class="zh">你（女性）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="هُوَ">هُوَ</span></td>
+            <td class="translit">huwa</td>
+            <td class="zh">他</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="هِيَ">هِيَ</span></td>
+            <td class="translit">hiya</td>
+            <td class="zh">她</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="اسْمِي">اسْمِي</span></td>
+            <td class="translit">ismī</td>
+            <td class="zh">我的名字是</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مَا اسْمُكَ؟">مَا اسْمُكَ؟</span></td>
+            <td class="translit">mā ismuka?</td>
+            <td class="zh">你叫什么名字？（对男性）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مَا اسْمُكِ؟">مَا اسْمُكِ؟</span></td>
+            <td class="translit">mā ismuki?</td>
+            <td class="zh">你叫什么名字？（对女性）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-card">
+      <h3>🌍 国籍与国家 · الجنسيات والبلاد</h3>
+      <table class="vocab-table">
+        <thead>
+          <tr><th>العربية (مذكر/مؤنث)</th><th>转写</th><th>中文释义</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مِصْرِيٌّ / مِصْرِيَّةٌ">مِصْرِيٌّ / مِصْرِيَّةٌ</span></td>
+            <td class="translit">miṣriyy(un) / miṣriyyah</td>
+            <td class="zh">埃及人（男/女）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="سُورِيٌّ / سُورِيَّةٌ">سُورِيٌّ / سُورِيَّةٌ</span></td>
+            <td class="translit">sūriyy(un) / sūriyyah</td>
+            <td class="zh">叙利亚人（男/女）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="تُرْكِيٌّ / تُرْكِيَّةٌ">تُرْكِيٌّ / تُرْكِيَّةٌ</span></td>
+            <td class="translit">turkiyy(un) / turkiyyah</td>
+            <td class="zh">土耳其人（男/女）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بَاكِسْتَانِيٌّ / بَاكِسْتَانِيَّةٌ">بَاكِسْتَانِيٌّ / بَاكِسْتَانِيَّةٌ</span></td>
+            <td class="translit">bākistāniyy(un) / bākistāniyyah</td>
+            <td class="zh">巴基斯坦人（男/女）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مِنْ أَيْنَ أَنْتَ؟">مِنْ أَيْنَ أَنْتَ؟</span></td>
+            <td class="translit">min ayna anta?</td>
+            <td class="zh">你从哪里来？（对男性）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مِنْ أَيْنِ أَنْتِ؟">مِنْ أَيْنِ أَنْتِ؟</span></td>
+            <td class="translit">min ayni anti?</td>
+            <td class="zh">你从哪里来？（对女性）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="أَنَا مِنْ ...">أَنَا مِنْ ...</span></td>
+            <td class="translit">anā min ...</td>
+            <td class="zh">我来自……</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-card">
+      <h3>💼 职业与身份 · المهن</h3>
+      <table class="vocab-table">
+        <thead>
+          <tr><th>العربية (مذكر/مؤنث)</th><th>转写</th><th>中文释义</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="طَالِبٌ / طَالِبَةٌ">طَالِبٌ / طَالِبَةٌ</span></td>
+            <td class="translit">ṭālib(un) / ṭālibah</td>
+            <td class="zh">学生（男/女）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مُدَرِّسٌ / مُدَرِّسَةٌ">مُدَرِّسٌ / مُدَرِّسَةٌ</span></td>
+            <td class="translit">mudarris(un) / mudarrisah</td>
+            <td class="zh">老师（男/女）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="طَبِيبٌ / طَبِيبَةٌ">طَبِيبٌ / طَبِيبَةٌ</span></td>
+            <td class="translit">ṭabīb(un) / ṭabībah</td>
+            <td class="zh">医生（男/女）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مُهَنْدِسٌ / مُهَنْدِسَةٌ">مُهَنْدِسٌ / مُهَنْدِسَةٌ</span></td>
+            <td class="translit">muhandis(un) / muhandisah</td>
+            <td class="zh">工程师（男/女）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="صَدِيقٌ / صَدِيقَةٌ">صَدِيقٌ / صَدِيقَةٌ</span></td>
+            <td class="translit">ṣadīq(un) / ṣadīqah</td>
+            <td class="zh">朋友（男/女）</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 语法要点：阿拉伯语的阴阳性：</strong>
+        阿拉伯语名词分阴阳两性。一般情况下，以「ة / ـَة」结尾的词为阴性（女性/雌性），
+        不加「ة」的为阳性（男性/雄性）。例如：طَالِب（男学生）→ طَالِبَة（女学生）。
+        职业和国籍都遵循这一规律。
+      </div>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== Section 3: 语法 · Grammatica ===== -->
+  <section class="page-section" id="grammatica">
+    <h2><span class="section-icon">📚</span> 语法详解 · التَّرَاكِيب النَّحْوِيَّة</h2>
+
+    <!-- 语法1: 指示代词 -->
+    <div class="grammar-box">
+      <h4>📌 语法点 1：指示代词 — هَذَا / هَذِهِ（这个）</h4>
+      <p style="margin-bottom:10px;font-size:0.9rem;">
+        阿拉伯语的指示代词分阴阳性：
+      </p>
+      <table class="grammar-table" style="width:100%;border-collapse:collapse;margin:10px 0;">
+        <thead>
+          <tr><th style="background:var(--ar-green);color:white;padding:8px 12px;">指示词</th><th style="background:var(--ar-green);color:white;padding:8px 12px;">性</th><th style="background:var(--ar-green);color:white;padding:8px 12px;">例句</th><th style="background:var(--ar-green);color:white;padding:8px 12px;">中文</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="هَذَا">هَذَا</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">阳性 (masc)</td>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="هَذَا طَالِبٌ.">هَذَا طَالِبٌ.</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">这是一位（男）学生。</td>
+          </tr>
+          <tr>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="هَذِهِ">هَذِهِ</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">阴性 (fem)</td>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="هَذِهِ طَالِبَةٌ.">هَذِهِ طَالِبَةٌ.</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">这是一位（女）学生。</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        «هَذَا» 用于指代阳性名词，相当于"这个（男的/阳性的）"；
+        «هَذِهِ» 用于指代阴性名词，相当于"这个（女的/阴性的）"。
+        在阿拉伯语中，描述事物时必须注意阴阳性的一致。
+      </div>
+    </div>
+
+    <!-- 语法2: 疑问词 -->
+    <div class="grammar-box">
+      <h4>📌 语法点 2：疑问词 — هَلْ / مَا / مَنْ（吗/什么/谁）</h4>
+      <table class="grammar-table" style="width:100%;border-collapse:collapse;margin:10px 0;">
+        <thead>
+          <tr><th style="background:var(--ar-green);color:white;padding:8px 12px;">疑问词</th><th style="background:var(--ar-green);color:white;padding:8px 12px;">含义</th><th style="background:var(--ar-green);color:white;padding:8px 12px;">例句</th><th style="background:var(--ar-green);color:white;padding:8px 12px;">中文</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="هَلْ">هَلْ</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">吗（一般疑问）</td>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="هَلْ أَنْتَ طَالِبٌ؟">هَلْ أَنْتَ طَالِبٌ؟</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">你是学生吗？</td>
+          </tr>
+          <tr>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="مَا">مَا</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">什么</td>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="مَا اسْمُكَ؟">مَا اسْمُكَ؟</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">你叫什么名字？</td>
+          </tr>
+          <tr>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="مَنْ">مَنْ</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">谁</td>
+            <td class="ar" style="padding:8px 12px;border:1px solid var(--ar-border);"><span class="click-speak" data-ar="مَنْ هَذَا؟">مَنْ هَذَا؟</span></td>
+            <td style="padding:8px 12px;border:1px solid var(--ar-border);">这是谁？</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        「هَلْ」是阿拉伯语中最常用的疑问词，相当于中文的"吗"，放在句首构成一般疑问句。
+        肯定回答用「نَعَم」（是的），否定回答用「لَا」（不/不是）。
+        「مَا」问"什么"，「مَنْ」问"谁"，二者放在句首构成特殊疑问句。
+      </div>
+    </div>
+
+    <!-- 语法3: 名词句 -->
+    <div class="grammar-box">
+      <h4>📌 语法点 3：名词句 — الجُمْلَةُ الاسْمِيَّةُ</h4>
+      <p style="margin-bottom:10px;font-size:0.9rem;">
+        阿拉伯语的名词句由两部分构成：<strong>主语（المبتدأ）+ 谓语（الخبر）</strong>，中间不需要动词"是"。
+      </p>
+      <div class="grammar-example">
+        <span class="ar"><span class="click-speak" data-ar="أَنَا طَالِبٌ.">أَنَا طَالِبٌ.</span></span>
+        <span class="zh">我是（一个）学生。</span>
+      </div>
+      <div class="grammar-example">
+        <span class="ar"><span class="click-speak" data-ar="هَذَا كِتَابٌ.">هَذَا كِتَابٌ.</span></span>
+        <span class="zh">这是一本书。</span>
+      </div>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        阿拉伯语没有"是/am/is/are"这类系动词（be动词）。
+        「أَنَا طَالِبٌ」字面就是"我学生"，中文翻译时需补充"是"字。
+        名词句的语序通常是：主语在前，谓语在后。主语和谓语必须在阴阳性和数上保持一致。
+      </div>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== Section 4: 数字 1-6 ===== -->
+  <section class="page-section" id="numeri">
+    <h2><span class="section-icon">🔢</span> 数字 1-6 · الأَعْدَاد مِنْ ١ إِلَى ٦</h2>
+    <div class="content-card">
+      <p style="margin-bottom:16px;color:var(--ar-text-light);font-size:0.88rem;">
+        点击数字收听阿拉伯语发音 🔊
+      </p>
+      <div class="arabic-numbers-row">
+        <div class="num-item" onclick="speak('وَاحِدٌ')">
+          <div class="digit">1</div>
+          <div class="ar">وَاحِدٌ</div>
+          <div class="translit">wāḥid</div>
+        </div>
+        <div class="num-item" onclick="speak('اِثْنَانِ')">
+          <div class="digit">2</div>
+          <div class="ar">اِثْنَانِ</div>
+          <div class="translit">ithnān</div>
+        </div>
+        <div class="num-item" onclick="speak('ثَلَاثَةٌ')">
+          <div class="digit">3</div>
+          <div class="ar">ثَلَاثَةٌ</div>
+          <div class="translit">thalāthah</div>
+        </div>
+        <div class="num-item" onclick="speak('أَرْبَعَةٌ')">
+          <div class="digit">4</div>
+          <div class="ar">أَرْبَعَةٌ</div>
+          <div class="translit">arbaʿah</div>
+        </div>
+        <div class="num-item" onclick="speak('خَمْسَةٌ')">
+          <div class="digit">5</div>
+          <div class="ar">خَمْسَةٌ</div>
+          <div class="translit">khamsah</div>
+        </div>
+        <div class="num-item" onclick="speak('سِتَّةٌ')">
+          <div class="digit">6</div>
+          <div class="ar">سِتَّةٌ</div>
+          <div class="translit">sittah</div>
+        </div>
+      </div>
+      <div class="explanation-note">
+        <strong>📝 中文解析：</strong>
+        阿拉伯语的数字 1-6 都是阳性形式（用于修饰阳性名词）。
+        数字 3-10 的拼写以「ـَة」结尾，这是阿拉伯语数字区别于一般名词的特征。
+        阿拉伯语使用东阿拉伯数字（٠١٢٣٤٥٦٧٨٩），与国际通用的西阿拉伯数字（0123456789）写法不同。
+      </div>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== Section 5: 语音训练 ===== -->
+  <section class="page-section" id="suoni">
+    <h2><span class="section-icon">🎧</span> 语音训练 · الأَصْوَات</h2>
+
+    <div class="content-card">
+      <h3>🔊 本节课重点音素：字母 «خ» (Khaa)</h3>
+      <div class="cultural-highlight">
+        <h5>🎯 发音要领</h5>
+        <p style="font-size:0.9rem;line-height:1.8;">
+          «خ» 是阿拉伯语特有的喉音/小舌音，发音时舌根抬起贴近小舌，
+          气流从小舌与舌根之间的缝隙摩擦而出。<strong>与汉语拼音「h」的区别：</strong>
+          خ 的发音部位更深（小舌位置），摩擦感更强烈。
+          想象喉咙深处发出像"哈"但更粗重的声音——类似吐痰前的喉咙振动感。
+        </p>
+      </div>
+      <p style="margin:12px 0 8px;font-weight:600;">🔹 请跟读以下含 «خ» 的单词：</p>
+      <div class="sound-practice">
+        <div class="sound-item" onclick="speak('خَالِد')">خَالِد</div>
+        <div class="sound-item" onclick="speak('بِخَيْرٍ')">بِخَيْرٍ</div>
+        <div class="sound-item" onclick="speak('أَخِي')">أَخِي</div>
+        <div class="sound-item" onclick="speak('شُكْرًا')">شُكْرًا</div>
+        <div class="sound-item" onclick="speak('خَمْسَةٌ')">خَمْسَة</div>
+      </div>
+
+      <h4 style="margin-top:20px;">📖 补充诵读材料（选自《古兰经》）</h4>
+      <div class="verse-box">
+        <div class="ar"><span class="click-speak" data-ar="الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</span></div>
+        <div class="zh">一切赞颂，全归真主，全世界的主。（《法谛海》1:2）</div>
+      </div>
+      <div class="verse-box">
+        <div class="ar"><span class="click-speak" data-ar="إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</span></div>
+        <div class="zh">我们只崇拜你，只求你佑助。（《法谛海》1:5）</div>
+      </div>
+      <div class="explanation-note">
+        <strong>📝 文化注释：</strong>
+        《古兰经》诵读是阿拉伯语语音训练的重要方法。
+        初学者可通过模仿诵读掌握阿拉伯语特有的喉音和咽音。
+        以上经文为「法谛海」（开端章）的节选。
+      </div>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== Section 6: 口语练习 ===== -->
+  <section class="page-section" id="parlare">
+    <h2><span class="section-icon">🗣️</span> 口语练习 · الكَلَام</h2>
+
+    <div class="content-card">
+      <h3>🎯 练习 1：互相问候 · تبادل التحية</h3>
+      <p style="margin-bottom:12px;color:var(--ar-text-light);font-size:0.88rem;">
+        跟同学练习以下对话（可点击跟读）：
+      </p>
+      <div class="practice-row">
+        <div class="practice-item">
+          <div class="ar" onclick="speak('السَّلَامُ عَلَيْكُمْ')">السَّلَامُ عَلَيْكُمْ</div>
+          <div class="zh">你好！</div>
+        </div>
+        <div class="practice-item">
+          <div class="ar" onclick="speak('وَعَلَيْكُمُ السَّلَامُ')">وَعَلَيْكُمُ السَّلَامُ</div>
+          <div class="zh">你好！</div>
+        </div>
+        <div class="practice-item">
+          <div class="ar" onclick="speak('كَيْفَ حَالُكَ؟')">كَيْفَ حَالُكَ؟</div>
+          <div class="zh">你好吗？</div>
+        </div>
+        <div class="practice-item">
+          <div class="ar" onclick="speak('بِخَيْرٍ، الْحَمْدُ لِلَّهِ')">بِخَيْرٍ، الْحَمْدُ لِلَّهِ</div>
+          <div class="zh">很好，感谢真主。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h3>🎯 练习 2：自我介绍 · التعريف بالنفس</h3>
+      <p style="margin-bottom:12px;color:var(--ar-text-light);font-size:0.88rem;">
+        根据提示完成自我介绍：
+      </p>
+      <table class="vocab-table">
+        <thead>
+          <tr><th>句式模板</th><th>替换选项</th><th>中文</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ar" style="font-size:1.1rem;">اسْمِي ______</td>
+            <td>خَالِد / مَرْيَم / أَحْمَد</td>
+            <td class="zh">我的名字是……</td>
+          </tr>
+          <tr>
+            <td class="ar" style="font-size:1.1rem;">أَنَا مِنْ ______</td>
+            <td>مِصْر / سُورِيَا / بَاكِسْتَان</td>
+            <td class="zh">我来自……</td>
+          </tr>
+          <tr>
+            <td class="ar" style="font-size:1.1rem;">أَنَا ______</td>
+            <td>طَالِب / طَالِبَة / مُدَرِّس / طَبِيب</td>
+            <td class="zh">我是……</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-card">
+      <h3>🎯 练习 3：问答配对 · السؤال والجواب</h3>
+      <p style="margin-bottom:8px;font-size:0.9rem;">请用阿拉伯语回答以下问题：</p>
+      <div class="exercise-box">
+        <div class="exercise-num">تمرين 1</div>
+        <p style="margin:8px 0;"><strong>أ-</strong> <span class="ar" style="font-family:var(--font-arabic);">كَيْفَ حَالُكَ؟</span></p>
+        <p style="margin:8px 0;"><strong>ب-</strong> <span class="ar" style="font-family:var(--font-arabic);">مَا اسْمُكَ؟</span></p>
+        <p style="margin:8px 0;"><strong>ج-</strong> <span class="ar" style="font-family:var(--font-arabic);">مِنْ أَيْنَ أَنْتَ؟</span></p>
+        <p style="margin:8px 0;"><strong>د-</strong> <span class="ar" style="font-family:var(--font-arabic);">هَلْ أَنْتَ طَالِبٌ؟</span></p>
+        <p style="margin:8px 0;font-size:0.85rem;color:var(--ar-text-light);">
+          参考答案：点击每个问题收听标准发音，然后自己尝试回答。
+        </p>
+      </div>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== Section 7: 阅读练习 ===== -->
+  <section class="page-section" id="leggere">
+    <h2><span class="section-icon">📖</span> 阅读练习 · القِرَاءَة</h2>
+
+    <div class="content-card">
+      <h3>🎯 阅读 1：词语匹配 · صِلْ بَيْنَ الْكَلِمَةِ وَالصُّورَةِ</h3>
+      <p style="margin-bottom:12px;font-size:0.88rem;">
+        将左侧阿拉伯语词语与右侧中文释义配对：
+      </p>
+      <table class="vocab-table">
+        <thead>
+          <tr><th>العربية</th><th>中文释义</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="السَّلَامُ عَلَيْكُمْ">السَّلَامُ عَلَيْكُمْ</span></td>
+            <td class="zh">你好（问候语）</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مَعَ السَّلَامَةِ">مَعَ السَّلَامَةِ</span></td>
+            <td class="zh">再见</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="شُكْرًا">شُكْرًا</span></td>
+            <td class="zh">谢谢</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="أَهْلًا وَسَهْلًا">أَهْلًا وَسَهْلًا</span></td>
+            <td class="zh">欢迎</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بِخَيْرٍ">بِخَيْرٍ</span></td>
+            <td class="zh">很好</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-card">
+      <h3>🎯 阅读 2：分辨· ضَعْ عَلَامَةَ (✓)</h3>
+      <p style="margin-bottom:12px;font-size:0.88rem;">
+        在每组中选出正确的词语（读出来并收听确认）：
+      </p>
+      <table class="vocab-table">
+        <thead>
+          <tr><th style="width:15%;">组</th><th>选项 أ</th><th>选项 ب</th><th>选项 ج</th><th>正确答案</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align:center;font-weight:700;">1</td>
+            <td class="ar" style="font-size:1.1rem;">طَالِب</td>
+            <td class="ar" style="font-size:1.1rem;">طَالِبَة</td>
+            <td class="ar" style="font-size:1.1rem;">مُدَرِّس</td>
+            <td style="color:var(--ar-green);font-size:0.82rem;">（看中文：女学生 → طَالِبَة）</td>
+          </tr>
+          <tr>
+            <td style="text-align:center;font-weight:700;">2</td>
+            <td class="ar" style="font-size:1.1rem;">مِصْرِي</td>
+            <td class="ar" style="font-size:1.1rem;">سُورِيَّا</td>
+            <td class="ar" style="font-size:1.1rem;">بَاكِسْتَان</td>
+            <td style="color:var(--ar-green);font-size:0.82rem;">（看中文：叙利亚 → سُورِيَّا）</td>
+          </tr>
+          <tr>
+            <td style="text-align:center;font-weight:700;">3</td>
+            <td class="ar" style="font-size:1.1rem;">هَذَا</td>
+            <td class="ar" style="font-size:1.1rem;">هَذِهِ</td>
+            <td class="ar" style="font-size:1.1rem;">مَنْ</td>
+            <td style="color:var(--ar-green);font-size:0.82rem;">（看中文：这个（阴性）→ هَذِهِ）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== Section 8: 书写练习 ===== -->
+  <section class="page-section" id="scrivere">
+    <h2><span class="section-icon">✍️</span> 书写练习 · الكِتَابَة</h2>
+
+    <div class="content-card">
+      <h3>🖌️ 本课字母 · الحُرُوف</h3>
+      <p style="margin-bottom:12px;color:var(--ar-text-light);font-size:0.88rem;">
+        阿拉伯语从右向左书写。以下为第一单元需要掌握的字母（独用形式和词尾形式）：
+      </p>
+      <table class="letter-table">
+        <thead>
+          <tr><th>字母 (独用)</th><th>词尾形式</th><th>名称</th><th>转写</th><th>发音描述</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="letter">ا</td><td class="letter-end">ـا</td>
+            <td class="letter-name">أَلِف</td><td>ā / a</td>
+            <td style="font-size:0.82rem;">长音 /a:/ 或作支撑</td>
+          </tr>
+          <tr>
+            <td class="letter">ب</td><td class="letter-end">ـب</td>
+            <td class="letter-name">بَاء</td><td>b</td>
+            <td style="font-size:0.82rem;">同英语 b</td>
+          </tr>
+          <tr>
+            <td class="letter">ت</td><td class="letter-end">ـت</td>
+            <td class="letter-name">تَاء</td><td>t</td>
+            <td style="font-size:0.82rem;">同英语 t</td>
+          </tr>
+          <tr>
+            <td class="letter">ث</td><td class="letter-end">ـث</td>
+            <td class="letter-name">ثَاء</td><td>th</td>
+            <td style="font-size:0.82rem;">同英语 think 的 th</td>
+          </tr>
+          <tr>
+            <td class="letter">ج</td><td class="letter-end">ـج</td>
+            <td class="letter-name">جِيم</td><td>j</td>
+            <td style="font-size:0.82rem;">同英语 j</td>
+          </tr>
+          <tr>
+            <td class="letter">ح</td><td class="letter-end">ـح</td>
+            <td class="letter-name">حَاء</td><td>ḥ</td>
+            <td style="font-size:0.82rem;">喉部摩擦音（哈气感）</td>
+          </tr>
+          <tr>
+            <td class="letter">خ</td><td class="letter-end">ـخ</td>
+            <td class="letter-name">خَاء</td><td>kh</td>
+            <td style="font-size:0.82rem;"><strong>小舌音</strong>（本课重点）</td>
+          </tr>
+          <tr>
+            <td class="letter">د</td><td class="letter-end">ـد</td>
+            <td class="letter-name">دَال</td><td>d</td>
+            <td style="font-size:0.82rem;">同英语 d</td>
+          </tr>
+          <tr>
+            <td class="letter">ذ</td><td class="letter-end">ـذ</td>
+            <td class="letter-name">ذَال</td><td>dh</td>
+            <td style="font-size:0.82rem;">同英语 that 的 th</td>
+          </tr>
+          <tr>
+            <td class="letter">ر</td><td class="letter-end">ـر</td>
+            <td class="letter-name">رَاء</td><td>r</td>
+            <td style="font-size:0.82rem;">颤音 / 弹舌 r</td>
+          </tr>
+          <tr>
+            <td class="letter">ز</td><td class="letter-end">ـز</td>
+            <td class="letter-name">زَاي</td><td>z</td>
+            <td style="font-size:0.82rem;">同英语 z</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="tip-box">
+        <span class="tip-icon">💡</span>
+        <div>
+          <strong>书写提示：</strong>阿拉伯语从右向左书写，与中文和英文方向相反。
+          字母在词首、词中、词尾有不同的写法（连写形式）。
+          本单元先掌握字母的<strong>独写形式（独立型）</strong>和<strong>词尾形式</strong>。
+          注意：ا د ذ ر ز 这六个字母不与后面的字母连写（只连前面，不连后面）。
+        </div>
+      </div>
+    </div>
+
+    <div class="content-card">
+      <h3>✏️ 描红练习</h3>
+      <p style="margin-bottom:12px;color:var(--ar-text-light);font-size:0.88rem;">
+        以下为各字母的描红示例，用纸笔从右到左临摹：
+      </p>
+      <div class="writing-grid">
+        <div class="letter-card">
+          <div class="letter-ar">ا</div>
+          <div class="letter-name">أَلِف</div>
+          <div class="letter-translit">ā</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">ب</div>
+          <div class="letter-name">بَاء</div>
+          <div class="letter-translit">b</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">ت</div>
+          <div class="letter-name">تَاء</div>
+          <div class="letter-translit">t</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">ث</div>
+          <div class="letter-name">ثَاء</div>
+          <div class="letter-translit">th</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">ج</div>
+          <div class="letter-name">جِيم</div>
+          <div class="letter-translit">j</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">ح</div>
+          <div class="letter-name">حَاء</div>
+          <div class="letter-translit">ḥ</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">خ</div>
+          <div class="letter-name">خَاء</div>
+          <div class="letter-translit">kh</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">د</div>
+          <div class="letter-name">دَال</div>
+          <div class="letter-translit">d</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">ذ</div>
+          <div class="letter-name">ذَال</div>
+          <div class="letter-translit">dh</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">ر</div>
+          <div class="letter-name">رَاء</div>
+          <div class="letter-translit">r</div>
+        </div>
+        <div class="letter-card">
+          <div class="letter-ar">ز</div>
+          <div class="letter-name">زَاي</div>
+          <div class="letter-translit">z</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== Section 9: 文化注释 ===== -->
+  <section class="page-section" id="cultura">
+    <h2><span class="section-icon">☪</span> 文化注释 · مُلَاحَظَات ثَقَافِيَّة</h2>
+
+    <div class="cultura-box">
+      <h4>🏺 伊斯兰问候礼：「السلام عليكم」的文化内涵</h4>
+      <p>
+        「السَّلَامُ عَلَيْكُمْ」不仅是问候语，更是伊斯兰教中的重要礼仪。
+        「سَلَام」（salaam）源自词根「س-ل-م」（安全、和平、顺从），与「إِسْلَام」（Islam）同源。
+      </p>
+      <p style="margin-top:10px;">
+        在阿拉伯世界，问候顺序有礼仪讲究：
+      </p>
+      <ul style="margin:8px 0 0 20px;font-size:0.9rem;line-height:1.8;">
+        <li>骑行者向步行者先问候</li>
+        <li>站立者向就坐者先问候</li>
+        <li>少数人向多数人先问候</li>
+        <li>年轻人向年长者先问候</li>
+      </ul>
+    </div>
+
+    <div class="cultura-box">
+      <h4>🏺 阿拉伯人的问候习惯</h4>
+      <p style="font-size:0.9rem;line-height:1.8;">
+        阿拉伯文化中，问候不仅是走过场，而是建立关系的重要步骤。
+        正式问候通常包括：
+      </p>
+      <ol style="margin:8px 0 0 20px;font-size:0.9rem;line-height:2;">
+        <li><strong>السلام عليكم</strong> — 平安问候</li>
+        <li><strong>كيف حالك؟</strong> — 询问近况（会认真听完回答）</li>
+        <li>询问家人（「كيف العائلة？」家人好吗？）</li>
+        <li>寒暄天气或工作</li>
+      </ol>
+      <p style="margin-top:10px;font-size:0.88rem;color:var(--ar-text-light);">
+        💡 <strong>文化提示：</strong>在阿拉伯文化中，跳过寒暄直接谈正事被视为不礼貌。
+        请耐心完成问候流程。
+      </p>
+    </div>
+
+    <div class="cultura-box">
+      <h4>🏺 「بسم الله」与「الحمد لله」——穆斯林的日常用语</h4>
+      <p style="font-size:0.9rem;line-height:1.8;">
+        <strong>「بِسْمِ اللَّهِ」（以真主之名）：</strong>穆斯林在做任何事情前都会念这句——吃饭、出门、学习、工作。
+        <br>
+        <strong>「الْحَمْدُ لِلَّهِ」（赞美归于真主）：</strong>表达满足和感恩，在回答"你好吗"时常用。
+        <br><br>
+        这两句体现了伊斯兰文化中<strong>「记念真主」（dhikr）</strong>的生活方式——
+        将信仰融入日常生活的每一个细节。
+      </p>
+    </div>
+
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+
+  <!-- ===== 导航按钮 ===== -->
+  <div class="nav-buttons">
+    <a href="index.html" class="nav-btn nav-btn-secondary">← 返回首页 · العودة</a>
+    <a href="#" class="nav-btn nav-btn-primary" onclick="alert('🎉 第一单元学习结束！第二单元即将上线。'); return false;">下一单元 · الوحدة التالية →</a>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <p>العربية بين يديك · 阿拉伯语在你手中 · 第一册 第一部分</p>
+    <p style="margin-top:4px;">الوحدة الأولى: التَّعَارُف — 第一单元：相识</p>
+  </footer>
+
+  <script src="js/arabic-speech.js"></script>
+</body>
+</html>
