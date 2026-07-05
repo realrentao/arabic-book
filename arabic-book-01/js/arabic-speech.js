@@ -93,6 +93,7 @@
     'بِخَيْرٍ، الْحَمْدُ لِلَّهِ.':             'sentence-bikhair-alhamdulillah.mp3',
     'بِخَيْرٍ وَالْحَمْدُ لِلَّهِ.':            'sentence-bikhair-alhamdulillah.mp3',
     'بِخَيْرٍ، الْحَمْدُ لِلَّهِ':             'sentence-bikhair-alhamdulillah.mp3',
+    'بِخَيْرٍ الْحَمْدُ لِلَّهِ':              'sentence-bikhair-alhamdulillah.mp3',
   };
 
   // ===== 状态 =====
@@ -100,21 +101,24 @@
   let isPlaying = false;
   let activeEl = null;      // 当前高亮的元素
 
-  // ===== 查找音频路径 =====
+  // ===== 查找音频路径（优先最长匹配）=====
   function findAudio(text) {
     if (!text) return null;
     // 标准化：移除标点
-    let key = text.replace(/[؟\?\.،,;:\-!]/g, '').trim();
+    let key = text.replace(/[؟?\\.،,;:\\-!]/g, '').trim();
     // 精确匹配
     if (audioMap[key]) return AUDIO_BASE + audioMap[key];
     // 去掉变音符号后匹配
     let clean = key.replace(/[ًٌٍَُِّْٰٖٗٓٔ]/g, '');
     if (audioMap[clean]) return AUDIO_BASE + audioMap[clean];
-    // 前缀/后缀匹配
+    // 找最长匹配（不返回第一个，避免"بِخَيْرٍ"抢在句子前面）
+    let best = null, bestLen = 0;
     for (const k of Object.keys(audioMap)) {
-      if (key.startsWith(k) || k.startsWith(key))
-        return AUDIO_BASE + audioMap[k];
+      if (clean.startsWith(k) || k.startsWith(clean)) {
+        if (k.length > bestLen) { best = k; bestLen = k.length; }
+      }
     }
+    if (best) return AUDIO_BASE + audioMap[best];
     return null;
   }
 
