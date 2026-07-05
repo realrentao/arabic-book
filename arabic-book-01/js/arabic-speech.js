@@ -89,6 +89,10 @@
     'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ': 'sentence-bismillah.mp3',
     'الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ':   'sentence-alhamdu.mp3',
     'إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ': 'sentence-iyyaka.mp3',
+    // 完整句子
+    'بِخَيْرٍ، الْحَمْدُ لِلَّهِ.':             'sentence-bikhair-alhamdulillah.mp3',
+    'بِخَيْرٍ وَالْحَمْدُ لِلَّهِ.':            'sentence-bikhair-alhamdulillah.mp3',
+    'بِخَيْرٍ، الْحَمْدُ لِلَّهِ':             'sentence-bikhair-alhamdulillah.mp3',
   };
 
   // ===== 状态 =====
