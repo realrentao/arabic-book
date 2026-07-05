@@ -93,6 +93,7 @@
     'بِخَيْرٍ، الْحَمْدُ لِلَّهِ.':             'sentence-bikhair-alhamdulillah.mp3',
     'بِخَيْرٍ وَالْحَمْدُ لِلَّهِ.':            'sentence-bikhair-alhamdulillah.mp3',
     'بِخَيْرٍ، الْحَمْدُ لِلَّهِ':             'sentence-bikhair-alhamdulillah.mp3',
+    'بِخَيْرٍ الْحَمْدُ لِلَّهِ':              'sentence-bikhair-alhamdulillah.mp3',
   };
 
   // ===== 状态 =====
