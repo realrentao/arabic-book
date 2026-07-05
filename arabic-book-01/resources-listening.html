@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>听力原文 | 阿拉伯语在你手中</title>
+  <link rel="stylesheet" href="css/arabic-styles.css">
+  <style>
+    .quiz-section{background:var(--ar-bg-card);border:1px solid var(--ar-border-light);border-radius:var(--ar-radius);padding:24px;margin-bottom:20px}
+    .quiz-section h3{color:var(--ar-green-dark);margin-bottom:12px;border-bottom:1px solid var(--ar-border);padding-bottom:8px}
+    .quiz-item{margin:16px 0;padding:12px 16px;background:var(--ar-bg-alt);border-radius:var(--ar-radius-sm)}
+    .quiz-item .q{font-weight:600;color:var(--ar-text-dark);margin-bottom:8px}
+    .quiz-item .ar{font-family:var(--font-arabic);font-size:1.2rem;direction:rtl;color:var(--ar-text-dark);margin:6px 0}
+    .quiz-item .opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .quiz-item .opts span{padding:6px 16px;background:var(--ar-bg-card);border:1px solid var(--ar-border);border-radius:20px;font-size:.88rem;cursor:default}
+    .quiz-item .opts span.correct{background:var(--ar-green-pale);border-color:var(--ar-green);color:var(--ar-green-dark)}
+    .quiz-item .answer{margin-top:8px;font-size:.82rem;color:var(--ar-green)}
+    .grammar-topic{margin:24px 0;padding:16px 20px;background:var(--ar-bg-card);border:1px solid var(--ar-border-light);border-radius:var(--ar-radius)}
+    .grammar-topic h3{color:var(--ar-green-dark);margin-bottom:6px}
+    .grammar-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.9rem}
+    .grammar-table td,.grammar-table th{padding:8px 12px;border:1px solid var(--ar-border);text-align:center}
+    .grammar-table th{background:var(--ar-green);color:#fff;font-size:.82rem}
+    .grammar-table .ar{font-family:var(--font-arabic);font-size:1.1rem;direction:rtl}
+    .vocab-letter{margin:24px 0}
+    .vocab-letter h3{color:var(--ar-green-dark);font-size:1.3rem;margin-bottom:8px;border-bottom:2px solid var(--ar-gold);padding-bottom:6px}
+    .listening-dialogue{margin:20px 0;padding:16px 20px;background:var(--ar-bg-alt);border-radius:var(--ar-radius-sm);border-left:3px solid var(--ar-gold)}
+    .listening-dialogue h3{color:var(--ar-green-dark);margin-bottom:8px}
+    .listening-dialogue .line{display:flex;gap:12px;margin:4px 0;font-size:.9rem}
+    .listening-dialogue .line .role{font-weight:600;color:var(--ar-green);min-width:70px}
+    .listening-dialogue .line .ar{font-family:var(--font-arabic);direction:rtl;flex:1;color:var(--ar-text-dark)}
+    .listening-dialogue .line .zh{color:var(--ar-text-light);flex:1;font-size:.85rem}
+    footer{text-align:center;padding:40px 24px;background:var(--ar-green-dark);color:rgba(250,250,245,.6);margin-top:40px}
+  </style>
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <nav class="top-nav">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">ع</span><span>العربية بين يديك</span></a>
+    <button class="nav-toggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="unit-1.html">第一单元</a></li>
+      <li><a href="resources-listening.html">听力原文</a></li>
+    </ul>
+  </nav>
+  <header class="unit-hero">
+    <div class="unit-hero-content">
+      <div class="level-badge"><span>📘</span><span>المستوى المبتدئ · Beginner A1</span></div>
+      <h1>نُصُوصُ الْمُسْمُوع</h1>
+      <p class="unit-chinese-title">听力训练文本 · 8 个单元全部对话原文</p>
+    </div>
+  </header>
+  <section class="page-section">
+
+    <div class="quiz-section">
+      <h3>📖 الوحدة 1: التَّعَارُف</h3>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 1: 问候</h3>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="السَّلَامُ عَلَيْكُمْ">السَّلَامُ عَلَيْكُمْ</span></span>
+            <span class="zh">祝你平安</span>
+          </div>
+          <div class="line">
+            <span class="role">أحمد</span>
+            <span class="ar"><span class="click-speak" data-ar="وَعَلَيْكُمُ السَّلَامُ">وَعَلَيْكُمُ السَّلَامُ</span></span>
+            <span class="zh">也祝你平安</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="كَيْفَ حَالُكَ؟">كَيْفَ حَالُكَ؟</span></span>
+            <span class="zh">你好吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">أحمد</span>
+            <span class="ar"><span class="click-speak" data-ar="بِخَيْرٍ، الْحَمْدُ لِلَّهِ">بِخَيْرٍ، الْحَمْدُ لِلَّهِ</span></span>
+            <span class="zh">很好，感谢真主</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 2: 姓名</h3>
+          <div class="line">
+            <span class="role">خولة</span>
+            <span class="ar"><span class="click-speak" data-ar="اسْمِي خَوْلَةُ. مَا اسْمُكِ؟">اسْمِي خَوْلَةُ. مَا اسْمُكِ؟</span></span>
+            <span class="zh">我叫郝莱。你叫什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="اسْمِي ...">اسْمِي ...</span></span>
+            <span class="zh">我叫……</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 3: 国籍(男)</h3>
+          <div class="line">
+            <span class="role">شريف</span>
+            <span class="ar"><span class="click-speak" data-ar="وَعَلَيْكُمُ السَّلَامُ">وَعَلَيْكُمُ السَّلَامُ</span></span>
+            <span class="zh">也祝你平安</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مِنْ أَيْنَ أَنْتَ؟">مِنْ أَيْنَ أَنْتَ؟</span></span>
+            <span class="zh">你从哪里来？</span>
+          </div>
+          <div class="line">
+            <span class="role">شريف</span>
+            <span class="ar"><span class="click-speak" data-ar="أَنَا مِنْ بَاكِسْتَانَ">أَنَا مِنْ بَاكِسْتَانَ</span></span>
+            <span class="zh">我来自巴基斯坦</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 4: 国籍(女)</h3>
+          <div class="line">
+            <span class="role">مريم</span>
+            <span class="ar"><span class="click-speak" data-ar="هَلْ أَنْتِ مِصْرِيَّةٌ؟">هَلْ أَنْتِ مِصْرِيَّةٌ؟</span></span>
+            <span class="zh">你是埃及人吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="لَا، أَنَا سُورِيَّةٌ. أَنَا مِنْ سُورِيَا">لَا، أَنَا سُورِيَّةٌ. أَنَا مِنْ سُورِيَا</span></span>
+            <span class="zh">不，我是叙利亚人</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 5: 欢迎</h3>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="أَهْلًا وَسَهْلًا">أَهْلًا وَسَهْلًا</span></span>
+            <span class="zh">欢迎！</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="شُكْرًا">شُكْرًا</span></span>
+            <span class="zh">谢谢</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 6: 告别</h3>
+          <div class="line">
+            <span class="role">هدى</span>
+            <span class="ar"><span class="click-speak" data-ar="مَعَ السَّلَامَةِ">مَعَ السَّلَامَةِ</span></span>
+            <span class="zh">再见</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَعَ السَّلَامَةِ">مَعَ السَّلَامَةِ</span></span>
+            <span class="zh">再见</span>
+          </div>
+      </div>
+    </div>
+    <div class="quiz-section">
+      <h3>📖 الوحدة 2: الأُسْرَة</h3>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 1: 家庭介绍</h3>
+          <div class="line">
+            <span class="role">عمّار</span>
+            <span class="ar"><span class="click-speak" data-ar="السَّلَامُ عَلَيْكُمْ">السَّلَامُ عَلَيْكُمْ</span></span>
+            <span class="zh">祝你平安</span>
+          </div>
+          <div class="line">
+            <span class="role">علي</span>
+            <span class="ar"><span class="click-speak" data-ar="وَعَلَيْكُمُ السَّلَامُ">وَعَلَيْكُمُ السَّلَامُ</span></span>
+            <span class="zh">也祝你平安</span>
+          </div>
+          <div class="line">
+            <span class="role">عمّار</span>
+            <span class="ar"><span class="click-speak" data-ar="مَنْ هَذَا؟">مَنْ هَذَا؟</span></span>
+            <span class="zh">这位是谁？</span>
+          </div>
+          <div class="line">
+            <span class="role">علي</span>
+            <span class="ar"><span class="click-speak" data-ar="هَذَا وَالِدِي عَدْنَانُ، وَهُوَ مُهَنْدِسٌ">هَذَا وَالِدِي عَدْنَانُ، وَهُوَ مُهَنْدِسٌ</span></span>
+            <span class="zh">这是我父亲，他是工程师</span>
+          </div>
+          <div class="line">
+            <span class="role">عمّار</span>
+            <span class="ar"><span class="click-speak" data-ar="وَمَنْ هَذِهِ؟">وَمَنْ هَذِهِ؟</span></span>
+            <span class="zh">这位呢？</span>
+          </div>
+          <div class="line">
+            <span class="role">علي</span>
+            <span class="ar"><span class="click-speak" data-ar="هَذِهِ وَالِدَتِي، وَهِيَ طَبِيبَةٌ">هَذِهِ وَالِدَتِي، وَهِيَ طَبِيبَةٌ</span></span>
+            <span class="zh">这是我母亲，她是医生</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 2: 含祖父母</h3>
+          <div class="line">
+            <span class="role">عمّار</span>
+            <span class="ar"><span class="click-speak" data-ar="وَمَنْ هَذَا؟">وَمَنْ هَذَا؟</span></span>
+            <span class="zh">这位是谁？</span>
+          </div>
+          <div class="line">
+            <span class="role">علي</span>
+            <span class="ar"><span class="click-speak" data-ar="هَذَا جَدِّي">هَذَا جَدِّي</span></span>
+            <span class="zh">这是我祖父</span>
+          </div>
+          <div class="line">
+            <span class="role">عمّار</span>
+            <span class="ar"><span class="click-speak" data-ar="وَهَلْ لَكَ أَخٌ؟">وَهَلْ لَكَ أَخٌ؟</span></span>
+            <span class="zh">你有兄弟吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">علي</span>
+            <span class="ar"><span class="click-speak" data-ar="نَعَم، هَذَا أَخِي عِيسَى، وَهُوَ طَالِبٌ">نَعَم، هَذَا أَخِي عِيسَى، وَهُوَ طَالِبٌ</span></span>
+            <span class="zh">是的，这是我的兄弟伊萨</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 3: 找东西</h3>
+          <div class="line">
+            <span class="role">الأب</span>
+            <span class="ar"><span class="click-speak" data-ar="أَيْنَ الْمُعْطَفُ؟">أَيْنَ الْمُعْطَفُ؟</span></span>
+            <span class="zh">大衣在哪儿？</span>
+          </div>
+          <div class="line">
+            <span class="role">سعيد</span>
+            <span class="ar"><span class="click-speak" data-ar="هَذَا هُوَ الْمُعْطَفُ يَا وَالِدِي">هَذَا هُوَ الْمُعْطَفُ يَا وَالِدِي</span></span>
+            <span class="zh">爸爸，这就是</span>
+          </div>
+          <div class="line">
+            <span class="role">الأب</span>
+            <span class="ar"><span class="click-speak" data-ar="هَيَّا بِنَا إِلَى الْمَسْجِدِ">هَيَّا بِنَا إِلَى الْمَسْجِدِ</span></span>
+            <span class="zh">走，我们去清真寺</span>
+          </div>
+      </div>
+    </div>
+    <div class="quiz-section">
+      <h3>📖 الوحدة 3: السَّكَن</h3>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 1: 我的家</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هَلْ هَذَا بَيْتُكَ؟">هَلْ هَذَا بَيْتُكَ؟</span></span>
+            <span class="zh">这是你家吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="نَعَم، هَذَا بَيْتِي">نَعَم، هَذَا بَيْتِي</span></span>
+            <span class="zh">是，这是我家</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَا هَذِهِ؟">مَا هَذِهِ؟</span></span>
+            <span class="zh">这是什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="هَذِهِ غُرْفَةُ الْجُلُوسِ">هَذِهِ غُرْفَةُ الْجُلُوسِ</span></span>
+            <span class="zh">这是客厅</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="هَذَا الْمَطْبَخُ، وَهَذَا الْحَمَّامُ">هَذَا الْمَطْبَخُ، وَهَذَا الْحَمَّامُ</span></span>
+            <span class="zh">这是厨房，这是浴室</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 2: 家具</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَاذَا فِي الْغُرْفَةِ؟">مَاذَا فِي الْغُرْفَةِ؟</span></span>
+            <span class="zh">房间里有什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="فِيهَا سَرِيرٌ وَمَكْتَبٌ">فِيهَا سَرِيرٌ وَمَكْتَبٌ</span></span>
+            <span class="zh">有一张床和书桌</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="وَهَلْ فِيهَا كُرْسِيٌّ؟">وَهَلْ فِيهَا كُرْسِيٌّ؟</span></span>
+            <span class="zh">有椅子吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="نَعَم، فِيهَا كُرْسِيَّانِ">نَعَم، فِيهَا كُرْسِيَّانِ</span></span>
+            <span class="zh">有，两把椅子</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 3: 在哪</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="أَيْنَ الْكِتَابُ؟">أَيْنَ الْكِتَابُ؟</span></span>
+            <span class="zh">书在哪？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="الْكِتَابُ عَلَى الْمَكْتَبِ">الْكِتَابُ عَلَى الْمَكْتَبِ</span></span>
+            <span class="zh">在书桌上</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="وَأَيْنَ الصُّورَةُ؟">وَأَيْنَ الصُّورَةُ؟</span></span>
+            <span class="zh">照片在哪？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هِيَ عَلَى الْحَائِطِ">هِيَ عَلَى الْحَائِطِ</span></span>
+            <span class="zh">在墙上</span>
+          </div>
+      </div>
+    </div>
+    <div class="quiz-section">
+      <h3>📖 الوحدة 4: الحياة اليومية</h3>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 1: 早上好</h3>
+          <div class="line">
+            <span class="role">أحمد</span>
+            <span class="ar"><span class="click-speak" data-ar="صَبَاحُ الْخَيْرِ">صَبَاحُ الْخَيْرِ</span></span>
+            <span class="zh">早上好</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="صَبَاحُ النُّورِ">صَبَاحُ النُّورِ</span></span>
+            <span class="zh">早上好</span>
+          </div>
+          <div class="line">
+            <span class="role">أحمد</span>
+            <span class="ar"><span class="click-speak" data-ar="مَاذَا تَفْعَلُ؟">مَاذَا تَفْعَلُ؟</span></span>
+            <span class="zh">你在做什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="أَقْرَأُ الْقُرْآنَ">أَقْرَأُ الْقُرْآنَ</span></span>
+            <span class="zh">我在读古兰经</span>
+          </div>
+          <div class="line">
+            <span class="role">أحمد</span>
+            <span class="ar"><span class="click-speak" data-ar="مَتَى تَذْهَبُ إِلَى الْعَمَلِ؟">مَتَى تَذْهَبُ إِلَى الْعَمَلِ؟</span></span>
+            <span class="zh">什么时候去上班？</span>
+          </div>
+          <div class="line">
+            <span class="role">خالد</span>
+            <span class="ar"><span class="click-speak" data-ar="أَذْهَبُ السَّاعَةَ الثَّامِنَةَ">أَذْهَبُ السَّاعَةَ الثَّامِنَةَ</span></span>
+            <span class="zh">八点去</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 2: 日常</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَاذَا تَفْعَلُ فِي الصَّبَاحِ؟">مَاذَا تَفْعَلُ فِي الصَّبَاحِ؟</span></span>
+            <span class="zh">你早上做什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="أَسْتَيْقِظُ وَأُصَلِّي وَأَتَناوَلُ الْفُطُورَ">أَسْتَيْقِظُ وَأُصَلِّي وَأَتَناوَلُ الْفُطُورَ</span></span>
+            <span class="zh">起床、礼拜、吃早餐</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَتَى تَنامُ؟">مَتَى تَنامُ؟</span></span>
+            <span class="zh">什么时候睡觉？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="أَنامُ السَّاعَةَ الْعَاشِرَةَ">أَنامُ السَّاعَةَ الْعَاشِرَةَ</span></span>
+            <span class="zh">十点</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 3: 星期几</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="أَيُّ يَوْمٍ الْيَوْمَ؟">أَيُّ يَوْمٍ الْيَوْمَ؟</span></span>
+            <span class="zh">今天星期几？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="الْيَوْمَ يَوْمُ الْجُمُعَةِ">الْيَوْمَ يَوْمُ الْجُمُعَةِ</span></span>
+            <span class="zh">星期五</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَاذَا سَتَفْعَلُ يَوْمَ السَّبْتِ؟">مَاذَا سَتَفْعَلُ يَوْمَ السَّبْتِ؟</span></span>
+            <span class="zh">星期六做什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="سَأَذْهَبُ إِلَى السُّوقِ">سَأَذْهَبُ إِلَى السُّوقِ</span></span>
+            <span class="zh">去市场</span>
+          </div>
+      </div>
+    </div>
+    <div class="quiz-section">
+      <h3>📖 الوحدة 5: الطعام والشراب</h3>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 1: 点餐</h3>
+          <div class="line">
+            <span class="role">نادل</span>
+            <span class="ar"><span class="click-speak" data-ar="أَهْلًا وَسَهْلًا! مَاذَا تُرِيدُ؟">أَهْلًا وَسَهْلًا! مَاذَا تُرِيدُ؟</span></span>
+            <span class="zh">欢迎！您想要什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">زبون</span>
+            <span class="ar"><span class="click-speak" data-ar="أُرِيدُ أَرُزًّا وَدَجَاجًا">أُرِيدُ أَرُزًّا وَدَجَاجًا</span></span>
+            <span class="zh">请给我米饭和鸡肉</span>
+          </div>
+          <div class="line">
+            <span class="role">نادل</span>
+            <span class="ar"><span class="click-speak" data-ar="هَلْ تُرِيدُ سَلَطَةً؟">هَلْ تُرِيدُ سَلَطَةً؟</span></span>
+            <span class="zh">要沙拉吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">زبون</span>
+            <span class="ar"><span class="click-speak" data-ar="نَعَم، وَعَصِيرَ بُرْتُقَالٍ">نَعَم، وَعَصِيرَ بُرْتُقَالٍ</span></span>
+            <span class="zh">是的，还要橙汁</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 2: 这是什么</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَا هَذَا؟">مَا هَذَا؟</span></span>
+            <span class="zh">这是什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هَذَا خُبْزٌ عَرَبِيٌّ">هَذَا خُبْزٌ عَرَبِيٌّ</span></span>
+            <span class="zh">这是阿拉伯饼</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هَلْ هَذَا لَذِيذٌ؟">هَلْ هَذَا لَذِيذٌ؟</span></span>
+            <span class="zh">好吃吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="نَعَم، إِنَّهُ لَذِيذٌ جِدًّا!">نَعَم، إِنَّهُ لَذِيذٌ جِدًّا!</span></span>
+            <span class="zh">非常好吃！</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 3: 早餐</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَاذَا تَتَناوَلُ فِي الْفُطُورِ؟">مَاذَا تَتَناوَلُ فِي الْفُطُورِ؟</span></span>
+            <span class="zh">早餐吃什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="آكُلُ الْبَيْضَ وَالْجُبْنَ وَأَشْرَبُ الشَّايَ">آكُلُ الْبَيْضَ وَالْجُبْنَ وَأَشْرَبُ الشَّايَ</span></span>
+            <span class="zh">鸡蛋、奶酪、红茶</span>
+          </div>
+      </div>
+    </div>
+    <div class="quiz-section">
+      <h3>📖 الوحدة 6: الصَّلَاة</h3>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 1: 几点</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="كَمِ السَّاعَةُ الْآنَ؟">كَمِ السَّاعَةُ الْآنَ؟</span></span>
+            <span class="zh">现在几点？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="السَّاعَةُ الْوَاحِدَةُ">السَّاعَةُ الْوَاحِدَةُ</span></span>
+            <span class="zh">一点</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَتَى صَلَاةُ الظُّهْرِ؟">مَتَى صَلَاةُ الظُّهْرِ؟</span></span>
+            <span class="zh">晌礼什么时候？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="صَلَاةُ الظُّهْرِ السَّاعَةَ الثَّانِيَةَ عَشْرَةَ">صَلَاةُ الظُّهْرِ السَّاعَةَ الثَّانِيَةَ عَشْرَةَ</span></span>
+            <span class="zh">十二点</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 2: 礼拜名</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="أَيُّ صَلَاةٍ هَذِهِ؟">أَيُّ صَلَاةٍ هَذِهِ؟</span></span>
+            <span class="zh">这是什么礼拜？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هَذِهِ صَلَاةُ الْعَصْرِ">هَذِهِ صَلَاةُ الْعَصْرِ</span></span>
+            <span class="zh">这是晡礼</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="كَمْ صَلَاةً فِي الْيَوْمِ؟">كَمْ صَلَاةً فِي الْيَوْمِ؟</span></span>
+            <span class="zh">每天几次礼拜？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="خَمْسُ صَلَوَاتٍ">خَمْسُ صَلَوَاتٍ</span></span>
+            <span class="zh">五次</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 3: 清真寺</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هَلْ تُصَلِّي فِي الْمَسْجِدِ كُلَّ يَوْمٍ؟">هَلْ تُصَلِّي فِي الْمَسْجِدِ كُلَّ يَوْمٍ؟</span></span>
+            <span class="zh">每天在清真寺做礼拜吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="نَعَم، أُصَلِّي الصَّلَوَاتِ الْخَمْسَ فِي الْمَسْجِدِ">نَعَم، أُصَلِّي الصَّلَوَاتِ الْخَمْسَ فِي الْمَسْجِدِ</span></span>
+            <span class="zh">是的，五番礼拜都在清真寺</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هَيَّا نَذْهَبُ مَعًا!">هَيَّا نَذْهَبُ مَعًا!</span></span>
+            <span class="zh">我们一起去吧！</span>
+          </div>
+      </div>
+    </div>
+    <div class="quiz-section">
+      <h3>📖 الوحدة 7: الدَّرْس</h3>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 1: 教室里</h3>
+          <div class="line">
+            <span class="role">مدرس</span>
+            <span class="ar"><span class="click-speak" data-ar="صَبَاحُ الْخَيْرِ يَا طُلَّابُ">صَبَاحُ الْخَيْرِ يَا طُلَّابُ</span></span>
+            <span class="zh">同学们早上好</span>
+          </div>
+          <div class="line">
+            <span class="role">طلاب</span>
+            <span class="ar"><span class="click-speak" data-ar="صَبَاحُ النُّورِ يَا أُسْتَاذُ">صَبَاحُ النُّورِ يَا أُسْتَاذُ</span></span>
+            <span class="zh">老师早上好</span>
+          </div>
+          <div class="line">
+            <span class="role">مدرس</span>
+            <span class="ar"><span class="click-speak" data-ar="اِفْتَحُوا الْكِتَابَ مِنْ فَضْلِكُمْ">اِفْتَحُوا الْكِتَابَ مِنْ فَضْلِكُمْ</span></span>
+            <span class="zh">请打开书</span>
+          </div>
+          <div class="line">
+            <span class="role">مدرس</span>
+            <span class="ar"><span class="click-speak" data-ar="هَلْ فَهِمْتُمْ؟">هَلْ فَهِمْتُمْ؟</span></span>
+            <span class="zh">理解了吗？</span>
+          </div>
+          <div class="line">
+            <span class="role">طالب</span>
+            <span class="ar"><span class="click-speak" data-ar="نَعَم، فَهِمْنَا">نَعَم، فَهِمْنَا</span></span>
+            <span class="zh">是的，理解了</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 2: 学什么</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَاذَا تَدْرُسُ فِي الْجَامِعَةِ؟">مَاذَا تَدْرُسُ فِي الْجَامِعَةِ؟</span></span>
+            <span class="zh">在大学学什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ">أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ</span></span>
+            <span class="zh">学阿拉伯语</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هَلْ هِيَ سَهْلَةٌ أَمْ صَعْبَة؟">هَلْ هِيَ سَهْلَةٌ أَمْ صَعْبَة؟</span></span>
+            <span class="zh">容易还是难？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هِيَ صَعْبَةٌ شَوِيًّا، لَكِنَّهَا جَمِيلَةٌ">هِيَ صَعْبَةٌ شَوِيًّا، لَكِنَّهَا جَمِيلَةٌ</span></span>
+            <span class="zh">有点难，但它很美</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 3: 复习</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="هَيَّا نَذَاكَرُ مَعًا">هَيَّا نَذَاكَرُ مَعًا</span></span>
+            <span class="zh">我们一起复习吧</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="فِكْرَةٌ جَيِّدَةٌ! مَتَى؟">فِكْرَةٌ جَيِّدَةٌ! مَتَى؟</span></span>
+            <span class="zh">好主意！什么时候？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="غَدًا بَعْدَ الظُّهْرِ">غَدًا بَعْدَ الظُّهْرِ</span></span>
+            <span class="zh">明天午后</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="إِنْ شَاءَ اللهُ">إِنْ شَاءَ اللهُ</span></span>
+            <span class="zh">但愿如此</span>
+          </div>
+      </div>
+    </div>
+    <div class="quiz-section">
+      <h3>📖 الوحدة 8: الْعَمَل</h3>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 1: 什么工作</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَا عَمَلُكَ يَا أُسْتَاذُ عُمَرُ؟">مَا عَمَلُكَ يَا أُسْتَاذُ عُمَرُ؟</span></span>
+            <span class="zh">奥马尔先生，什么工作？</span>
+          </div>
+          <div class="line">
+            <span class="role">عمر</span>
+            <span class="ar"><span class="click-speak" data-ar="أَنَا طَبِيبٌ. أَعْمَلُ فِي الْمُسْتَشْفَى">أَنَا طَبِيبٌ. أَعْمَلُ فِي الْمُسْتَشْفَى</span></span>
+            <span class="zh">我是医生，在医院工作</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="كَمْ سَاعَةً تَعْمَلُ؟">كَمْ سَاعَةً تَعْمَلُ؟</span></span>
+            <span class="zh">每天工作几小时？</span>
+          </div>
+          <div class="line">
+            <span class="role">عمر</span>
+            <span class="ar"><span class="click-speak" data-ar="أَعْمَلُ ثَمَانِيَ سَاعَاتٍ">أَعْمَلُ ثَمَانِيَ سَاعَاتٍ</span></span>
+            <span class="zh">八小时</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 2: 工作地点</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَاذَا يَعْمَلُ أَخُوكَ؟">مَاذَا يَعْمَلُ أَخُوكَ؟</span></span>
+            <span class="zh">你兄弟做什么？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="أَخِي مُهَنْدِسٌ. يَعْمَلُ فِي شَرِكَةٍ">أَخِي مُهَنْدِسٌ. يَعْمَلُ فِي شَرِكَةٍ</span></span>
+            <span class="zh">我兄弟是工程师，在公司工作</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="أُرِيدُ أَنْ أَكونَ مُحَامِيًا">أُرِيدُ أَنْ أَكونَ مُحَامِيًا</span></span>
+            <span class="zh">我想成为律师</span>
+          </div>
+      </div>
+      <div class="listening-dialogue">
+        <h3>🎯 对话 3: 工作时间</h3>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَتَى يَبْدَأُ الْعَمَلُ؟">مَتَى يَبْدَأُ الْعَمَلُ؟</span></span>
+            <span class="zh">工作几点开始？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="يَبْدَأُ الْعَمَلُ السَّاعَةَ الثَّامِنَةَ">يَبْدَأُ الْعَمَلُ السَّاعَةَ الثَّامِنَةَ</span></span>
+            <span class="zh">八点开始</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="مَا هُوَ يَوْمُ الْعُطْلَةِ؟">مَا هُوَ يَوْمُ الْعُطْلَةِ؟</span></span>
+            <span class="zh">哪天休息？</span>
+          </div>
+          <div class="line">
+            <span class="role">—</span>
+            <span class="ar"><span class="click-speak" data-ar="يَوْمُ الْجُمُعَةِ وَالسَّبْتِ">يَوْمُ الْجُمُعَةِ وَالسَّبْتِ</span></span>
+            <span class="zh">星期五和星期六</span>
+          </div>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <div class="footer-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <p>العربية بين يديك · 阿拉伯语在你手中 · 第一册 第一部分</p>
+    <p style="margin-top:4px">听力原文 · 含 24 段对话完整文字记录</p>
+  </footer>
+  <script src="js/arabic-speech.js"></script>
+</body>
+</html>
