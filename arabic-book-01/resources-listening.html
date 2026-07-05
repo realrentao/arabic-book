@@ -14,7 +14,15 @@
     .quiz-item .opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
     .quiz-item .opts span{padding:6px 16px;background:var(--ar-bg-card);border:1px solid var(--ar-border);border-radius:20px;font-size:.88rem;cursor:default}
     .quiz-item .opts span.correct{background:var(--ar-green-pale);border-color:var(--ar-green);color:var(--ar-green-dark)}
-    .quiz-item .answer{margin-top:8px;font-size:.82rem;color:var(--ar-green)}
+    .quiz-item .answer{display:none;margin-top:8px;padding:8px 14px;background:var(--ar-green-pale);border-radius:6px;font-size:.9rem;color:var(--ar-green-dark)}
+    .quiz-item .answer.show{display:block}
+    .show-answer-btn{margin-top:8px;padding:4px 16px;background:transparent;border:1px dashed var(--ar-border);border-radius:20px;font-size:.78rem;cursor:pointer;color:var(--ar-text-light);transition:all .2s}
+    .show-answer-btn:hover{border-color:var(--ar-green);color:var(--ar-green);background:var(--ar-green-pale)}
+    .quiz-item .opts span{cursor:pointer;transition:all .2s}
+    .quiz-item .opts span:hover{border-color:var(--ar-green);background:var(--ar-green-pale)}
+    .quiz-item .opts span.chosen{border-color:var(--ar-green-dark);background:var(--ar-green-pale)}
+    .quiz-item .opts span.reveal-correct{border-color:var(--ar-green)!important;background:#c8f7c5!important;font-weight:700}
+    .quiz-item .opts span.reveal-user-wrong{border-color:var(--ar-terracotta)!important;background:#fdd!important;text-decoration:line-through}
     .grammar-topic{margin:24px 0;padding:16px 20px;background:var(--ar-bg-card);border:1px solid var(--ar-border-light);border-radius:var(--ar-radius)}
     .grammar-topic h3{color:var(--ar-green-dark);margin-bottom:6px}
     .grammar-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.9rem}
@@ -40,7 +48,17 @@
     <ul class="nav-links">
       <li><a href="index.html">首页</a></li>
       <li><a href="unit-1.html">第一单元</a></li>
-      <li><a href="resources-listening.html">听力原文</a></li>
+      <li><a href="unit-2.html">第二单元</a></li>
+      <li><a href="unit-3.html">第三单元</a></li>
+      <li><a href="unit-4.html">第四单元</a></li>
+      <li><a href="unit-5.html">第五单元</a></li>
+      <li><a href="unit-6.html">第六单元</a></li>
+      <li><a href="unit-7.html">第七单元</a></li>
+      <li><a href="unit-8.html">第八单元</a></li>
+      <li><a href="resources-grammar.html">📚 语法</a></li>
+      <li><a href="resources-vocab.html">📖 词汇</a></li>
+      <li><a href="resources-quiz.html">📝 自测</a></li>
+      <li><a href="resources-listening.html">🗣️ 听力</a></li>
     </ul>
   </nav>
   <header class="unit-hero">
