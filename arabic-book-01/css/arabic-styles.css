@@ -658,11 +658,20 @@ tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
 }
 
 .vocab-table th:first-child {
-  width: 40%;
+  width: 38%;
 }
 
 .vocab-table th:nth-child(2) {
-  width: 22%;
+  width: 28%;
+}
+
+.vocab-table .translit {
+  font-style: italic;
+  color: var(--ar-text-light);
+  font-size: 0.82rem;
+  font-family: var(--font-mono);
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .vocab-table td {
@@ -678,13 +687,6 @@ tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
   font-size: 1.2rem;
   direction: rtl;
   color: var(--ar-text-dark);
-}
-
-.vocab-table .translit {
-  font-style: italic;
-  color: var(--ar-text-light);
-  font-size: 0.82rem;
-  font-family: var(--font-mono);
 }
 
 .vocab-table .zh {
