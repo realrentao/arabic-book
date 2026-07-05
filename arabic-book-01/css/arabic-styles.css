@@ -554,6 +554,7 @@ tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
 /* ===== Dialogue Table ===== */
 .dialog-table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   margin: 16px 0;
@@ -582,6 +583,10 @@ tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
 
 .dialog-table th:nth-child(2) {
   width: 55%;
+}
+
+.dialog-table th:nth-child(3) {
+  width: 30%;
 }
 
 .dialog-table td {
@@ -630,6 +635,7 @@ tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
 /* ===== Vocabulary Table ===== */
 .vocab-table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: separate;
   border-spacing: 0;
   margin: 16px 0;
@@ -652,11 +658,11 @@ tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
 }
 
 .vocab-table th:first-child {
-  width: 35%;
+  width: 45%;
 }
 
 .vocab-table th:nth-child(2) {
-  width: 30%;
+  width: 20%;
 }
 
 .vocab-table td {
