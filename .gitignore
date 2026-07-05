@@ -1,0 +1,5 @@
+build_units.py
+generate_audio.py
+audio/audio-manifest.json
+*.pyc
+__pycache__/

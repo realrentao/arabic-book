@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الوحدة الثالثة: السَّكَن — 居住 | العربية بين يديك</title>
+  <link rel="stylesheet" href="css/arabic-styles.css">
+  <style>
+    .dialogue-speaker{display:inline-block;background:var(--ar-green);color:#fff;padding:1px 10px;border-radius:4px;font-size:.78rem;font-weight:600;margin-right:8px;}
+    .cultural-highlight{background:linear-gradient(135deg,#FFF8E1,#FFECB3);padding:16px 20px;border-radius:var(--ar-radius);margin:16px 0;border:1px solid var(--ar-gold);}
+    .cultural-highlight h5{color:var(--ar-gold-dark);font-size:.92rem;margin-bottom:8px;}
+    .arabic-numbers-row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin:20px 0;}
+    .arabic-numbers-row .num-item{text-align:center;cursor:pointer;transition:var(--ar-transition);padding:12px 16px;border-radius:var(--ar-radius-sm);background:var(--ar-bg-card);border:1px solid var(--ar-border-light);min-width:80px;}
+    .arabic-numbers-row .num-item:hover{border-color:var(--ar-green);background:var(--ar-green-pale);transform:translateY(-2px);}
+    .arabic-numbers-row .digit{font-size:1.3rem;font-weight:700;color:var(--ar-blue-dark);}
+    .arabic-numbers-row .ar{font-family:var(--font-arabic-heading);font-size:1.5rem;color:var(--ar-green-dark);}
+    .arabic-numbers-row .translit{font-size:.72rem;color:var(--ar-text-light);font-style:italic;}
+    .sound-practice{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0;}
+    .sound-practice .sound-item{background:var(--ar-bg-card);border:2px solid var(--ar-border);border-radius:var(--ar-radius-sm);padding:12px 20px;cursor:pointer;transition:var(--ar-transition);font-family:var(--font-arabic);font-size:1.3rem;color:var(--ar-text-dark);text-align:center;min-width:80px;}
+    .sound-practice .sound-item:hover{border-color:var(--ar-green);background:var(--ar-green-pale);transform:translateY(-2px);}
+    .writing-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:12px;margin:16px 0;}
+    .writing-grid .letter-card{background:var(--ar-bg-card);border:1px solid var(--ar-border);border-radius:var(--ar-radius-sm);padding:16px 8px;text-align:center;cursor:pointer;transition:var(--ar-transition);}
+    .writing-grid .letter-card:hover{border-color:var(--ar-gold);box-shadow:0 4px 12px var(--ar-shadow);transform:translateY(-2px);}
+    .writing-grid .letter-card .letter-ar{font-family:var(--font-arabic-heading);font-size:2rem;color:var(--ar-green-dark);line-height:1.3;}
+    .writing-grid .letter-card .letter-tx{font-size:.75rem;color:var(--ar-text-light);margin-top:4px;}
+    .grammar-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.9rem;font-family:var(--font-arabic);}
+    .grammar-table td,.grammar-table th{padding:8px 12px;border:1px solid var(--ar-border);vertical-align:middle;text-align:center;}
+    .grammar-table th{background:var(--ar-green);color:#fff;font-weight:600;font-family:var(--font-chinese);}
+    .grammar-table .ar{font-size:1.15rem;direction:rtl;}
+    @media(max-width:600px){.writing-grid{grid-template-columns:repeat(4,1fr);}}
+  </style>
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <nav class="top-nav">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">ع</span><span>العربية بين يديك</span></a>
+    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <ul class="nav-links"><li><a href="index.html">首页</a></li><li><a href="unit-1.html">第一单元</a></li>
+      <li><a href="unit-2.html">第二单元</a></li>
+      <li><a href="unit-3.html" class="active">第三单元</a></li>
+      <li><a href="unit-4.html">第四单元</a></li>
+      <li><a href="unit-5.html">第五单元</a></li>
+      <li><a href="unit-6.html">第六单元</a></li>
+      <li><a href="unit-7.html">第七单元</a></li>
+      <li><a href="unit-8.html">第八单元</a></li></ul>
+  </nav>
+  <header class="unit-hero">
+    <div class="unit-hero-content">
+      <div class="level-badge"><span>📘</span><span>المستوى المبتدئ · Beginner A1</span></div>
+      <h1>السَّكَن</h1>
+      <p class="unit-subtitle">Housing · 居住</p>
+      <p class="unit-chinese-title">第三单元：描述住所、房间、家具和位置</p>
+      <div class="unit-tags"><span class="tag">💬 3 段对话</span>
+      <span class="tag">📖 35+ 核心词汇</span>
+      <span class="tag">📚 أَيْنَ· ماذا · 双数</span>
+      <span class="tag">🔊 字母 ح 的发音</span>
+      <span class="tag">✍️ 字母 ج—غ 书写</span></div>
+    </div>
+  </header>
+
+  <section class="page-section">
+    <h2><span class="section-icon">💬</span> 核心对话 · الحِوَارَات</h2>
+<p style="margin-bottom:16px;color:var(--ar-text-light);font-size:0.88rem;">点击阿拉伯语句子即可收听发音 🔊</p>
+    <div class="content-card">
+      <h3>对话 1 — 我的房子 · بَيْتِي</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">介绍家的各个房间</p>
+<table class="dialog-table"><thead><tr><th>角色</th><th>العربية</th><th>中文</th></tr></thead><tbody>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="هَلْ هَذَا بَيْتُكَ؟">هَلْ هَذَا بَيْتُكَ؟</span></td>
+            <td class="zh">这是你家吗？</td>
+          </tr>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="نَعَم، هَذَا بَيْتِي.">نَعَم، هَذَا بَيْتِي.</span></td>
+            <td class="zh">是，这是我家。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="مَا هَذِهِ؟">مَا هَذِهِ؟</span></td>
+            <td class="zh">这是什么？</td>
+          </tr>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="هَذِهِ غُرْفَةُ الْجُلُوسِ.">هَذِهِ غُرْفَةُ الْجُلُوسِ.</span></td>
+            <td class="zh">这是客厅。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="وَمَا هَذَا؟">وَمَا هَذَا؟</span></td>
+            <td class="zh">这是什么？</td>
+          </tr>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="هَذَا الْمَطْبَخُ، وَهَذَا الْحَمَّامُ.">هَذَا الْمَطْبَخُ، وَهَذَا الْحَمَّامُ.</span></td>
+            <td class="zh">这是厨房，这是浴室。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="بَيْتٌ جَمِيلٌ!">بَيْتٌ جَمِيلٌ!</span></td>
+            <td class="zh">漂亮的房子！</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="content-card">
+      <h3>对话 2 — 家具 · الأَثَاث</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">用 «ماذا» 问房间里的物品</p>
+<table class="dialog-table"><thead><tr><th>角色</th><th>العربية</th><th>中文</th></tr></thead><tbody>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="مَاذَا فِي الْغُرْفَةِ؟">مَاذَا فِي الْغُرْفَةِ؟</span></td>
+            <td class="zh">房间里有什么？</td>
+          </tr>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="فِيهَا سَرِيرٌ وَمَكْتَبٌ.">فِيهَا سَرِيرٌ وَمَكْتَبٌ.</span></td>
+            <td class="zh">里面有一张床和一张书桌。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="وَهَلْ فِيهَا كُرْسِيٌّ؟">وَهَلْ فِيهَا كُرْسِيٌّ؟</span></td>
+            <td class="zh">里面有椅子吗？</td>
+          </tr>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="نَعَم، فِيهَا كُرْسِيَّانِ.">نَعَم، فِيهَا كُرْسِيَّانِ.</span></td>
+            <td class="zh">有，里面有两把椅子。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="هَلْ فِي الْغُرْفَةِ تِلْفَازٌ؟">هَلْ فِي الْغُرْفَةِ تِلْفَازٌ؟</span></td>
+            <td class="zh">房间里有电视吗？</td>
+          </tr>
+          <tr>
+            <td>خَالِد</td>
+            <td class="ar"><span class="click-speak" data-ar="لَا، لَيْسَ فِيهَا تِلْفَازٌ.">لَا، لَيْسَ فِيهَا تِلْفَازٌ.</span></td>
+            <td class="zh">不，没有电视。</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="content-card">
+      <h3>对话 3 — 在哪？· أَيْنَ؟</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">练习方位介词</p>
+<table class="dialog-table"><thead><tr><th>角色</th><th>العربية</th><th>中文</th></tr></thead><tbody>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="أَيْنَ الْكِتَابُ؟">أَيْنَ الْكِتَابُ؟</span></td>
+            <td class="zh">书在哪里？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="الْكِتَابُ عَلَى الْمَكْتَبِ.">الْكِتَابُ عَلَى الْمَكْتَبِ.</span></td>
+            <td class="zh">书在书桌上。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="وَأَيْنَ حَقِيبَتِي؟">وَأَيْنَ حَقِيبَتِي؟</span></td>
+            <td class="zh">我的包在哪儿？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="هِيَ تَحْتَ الْمَكْتَبِ.">هِيَ تَحْتَ الْمَكْتَبِ.</span></td>
+            <td class="zh">它在书桌下面。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="وَأَيْنَ الصُّورَةُ؟">وَأَيْنَ الصُّورَةُ؟</span></td>
+            <td class="zh">照片在哪？</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="هِيَ عَلَى الْحَائِطِ.">هِيَ عَلَى الْحَائِطِ.</span></td>
+            <td class="zh">它在墙上。</td>
+          </tr>
+          <tr>
+            <td>—</td>
+            <td class="ar"><span class="click-speak" data-ar="شُكْرًا.">شُكْرًا.</span></td>
+            <td class="zh">谢谢。</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">📖</span> 核心词汇 · المُفْرَدَات</h2>
+    <div class="content-card">
+      <h3>房屋与房间 · الْمَنْزِل</h3>
+      
+<table class="vocab-table"><thead><tr><th>العربية</th><th>转写</th><th>中文释义</th></tr></thead><tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="سَكَن">سَكَن</span></td>
+            <td class="translit">sakan</td>
+            <td class="zh">住所/住房</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بَيْت">بَيْت</span></td>
+            <td class="translit">bayt</td>
+            <td class="zh">房子</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="غُرْفَة">غُرْفَة</span></td>
+            <td class="translit">ghurfah</td>
+            <td class="zh">房间</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="غُرْفَةُ الْجُلُوسِ">غُرْفَةُ الْجُلُوسِ</span></td>
+            <td class="translit">ghurfat al-julūs</td>
+            <td class="zh">客厅</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="غُرْفَةُ النَّوْمِ">غُرْفَةُ النَّوْمِ</span></td>
+            <td class="translit">ghurfat an-nawm</td>
+            <td class="zh">卧室</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مَطْبَخ">مَطْبَخ</span></td>
+            <td class="translit">maṭbakh</td>
+            <td class="zh">厨房</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="حَمَّام">حَمَّام</span></td>
+            <td class="translit">ḥammām</td>
+            <td class="zh">浴室</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="حَدِيقَة">حَدِيقَة</span></td>
+            <td class="translit">ḥadīqah</td>
+            <td class="zh">花园</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بَاب">بَاب</span></td>
+            <td class="translit">bāb</td>
+            <td class="zh">门</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="نَافِذَة">نَافِذَة</span></td>
+            <td class="translit">nāfidhah</td>
+            <td class="zh">窗户</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="content-card">
+      <h3>家具与物品 · الأَثَاث</h3>
+      
+<table class="vocab-table"><thead><tr><th>العربية</th><th>转写</th><th>中文释义</th></tr></thead><tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="سَرِير">سَرِير</span></td>
+            <td class="translit">sarīr</td>
+            <td class="zh">床</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="مَكْتَب">مَكْتَب</span></td>
+            <td class="translit">maktab</td>
+            <td class="zh">书桌</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="كُرْسِي">كُرْسِي</span></td>
+            <td class="translit">kursī</td>
+            <td class="zh">椅子</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="طَاوِلَة">طَاوِلَة</span></td>
+            <td class="translit">ṭāwilah</td>
+            <td class="zh">桌子</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="تِلْفَاز">تِلْفَاز</span></td>
+            <td class="translit">tilfāz</td>
+            <td class="zh">电视</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="ثَلَّاجَة">ثَلَّاجَة</span></td>
+            <td class="translit">thallājah</td>
+            <td class="zh">冰箱</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="حَقِيبَة">حَقِيبَة</span></td>
+            <td class="translit">ḥaqībah</td>
+            <td class="zh">包/书包</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="كِتَاب">كِتَاب</span></td>
+            <td class="translit">kitāb</td>
+            <td class="zh">书</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="قَلَم">قَلَم</span></td>
+            <td class="translit">qalam</td>
+            <td class="zh">笔</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="حَائِط">حَائِط</span></td>
+            <td class="translit">ḥāʾiṭ</td>
+            <td class="zh">墙壁</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="content-card">
+      <h3>方位介词 · حُرُوف الْجَرّ</h3>
+      
+<table class="vocab-table"><thead><tr><th>العربية</th><th>转写</th><th>中文释义</th></tr></thead><tbody>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="فِي">فِي</span></td>
+            <td class="translit">fī</td>
+            <td class="zh">在……里面</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="عَلَى">عَلَى</span></td>
+            <td class="translit">ʿalā</td>
+            <td class="zh">在……上面</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="تَحْتَ">تَحْتَ</span></td>
+            <td class="translit">taḥta</td>
+            <td class="zh">在……下面</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="فَوْقَ">فَوْقَ</span></td>
+            <td class="translit">fawqa</td>
+            <td class="zh">在……上方</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="أَمَامَ">أَمَامَ</span></td>
+            <td class="translit">amāma</td>
+            <td class="zh">在……前面</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="وَرَاءَ">وَرَاءَ</span></td>
+            <td class="translit">warāʾa</td>
+            <td class="zh">在……后面</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="بَيْنَ">بَيْنَ</span></td>
+            <td class="translit">bayna</td>
+            <td class="zh">在……之间</td>
+          </tr>
+          <tr>
+            <td class="ar"><span class="click-speak" data-ar="عِنْدَ">عِنْدَ</span></td>
+            <td class="translit">ʿinda</td>
+            <td class="zh">在……处/旁边</td>
+          </tr>
+        </tbody></table>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">📚</span> 语法详解 · التَّرَاكِيب النَّحْوِيَّة</h2>
+    <div class="grammar-box">
+      <h4>📌 语法点：«أَيْنَ» — 问位置</h4>
+      <table class="grammar-table"><thead><tr><th>书在哪里？</th><th>书在书桌上。</th></tr></thead><tbody><tr><td class="ar"><span class="click-speak" data-ar="أَيْنَ الْكِتَابُ؟">أَيْنَ الْكِتَابُ؟</span></td><td class="ar"><span class="click-speak" data-ar="الْكِتَابُ عَلَى الْمَكْتَبِ.">الْكِتَابُ عَلَى الْمَكْتَبِ.</span></td></tr></tbody></table>
+            <div class="explanation-note">
+        <strong>📝 中文解析：</strong>用 «أَيْنَ» 问位置，回答用方位介词短语（عَلَى/تَحْتَ/فِي/أَمَامَ...+定指名词）。主语必须是定指（带ال或属格结构）。
+      </div>
+    </div>
+    <div class="grammar-box">
+      <h4>📌 语法点：«مَاذَا» — 问「什么」</h4>
+      <table class="grammar-table"><thead><tr><th>房间里有什么？</th><th>里面有一张床。</th></tr></thead><tbody><tr><td class="ar"><span class="click-speak" data-ar="مَاذَا فِي الْغُرْفَةِ؟">مَاذَا فِي الْغُرْفَةِ؟</span></td><td class="ar"><span class="click-speak" data-ar="فِيهَا سَرِيرٌ.">فِيهَا سَرِيرٌ.</span></td></tr></tbody></table>
+            <div class="explanation-note">
+        <strong>📝 中文解析：</strong>「مَاذَا」是 مَا（什么）+ ذَا 的复合形式。回答时用泛指名词（无冠词），表示'有一个XX'。كُرْسِيَّانِ（双数：两把椅子）体现了名词的双数特征。
+      </div>
+    </div>
+    <div class="grammar-box">
+      <h4>📌 语法点：名词双数 — الْمُثَنَّى</h4>
+      <table class="grammar-table"><thead><tr><th>一把椅子</th><th>两把椅子</th></tr></thead><tbody><tr><td class="ar"><span class="click-speak" data-ar="كُرْسِيٌّ">كُرْسِيٌّ</span></td><td class="ar"><span class="click-speak" data-ar="كُرْسِيَّانِ">كُرْسِيَّانِ</span></td></tr><tr><td class="ar"><span class="click-speak" data-ar="كِتَابٌ">كِتَابٌ</span></td><td class="ar"><span class="click-speak" data-ar="كِتَابَانِ">كِتَابَانِ</span></td></tr></tbody></table>
+            <div class="explanation-note">
+        <strong>📝 中文解析：</strong>阿拉伯语有单数、双数、复数三套系统。双数在单数名词后加 «انِ» 或 «َيْنِ»。这是阿语区别于中英文的独特之处。双数的修饰语也必须是双数。
+      </div>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">🔢</span> 数字练习 · الأَعْدَاد</h2>
+    <div class="content-card">
+      <h3>🎯 数字 —</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">点击数字收听发音 🔊</p>
+<div class="arabic-numbers-row">
+        <div class="num-item" onclick="speak('وَاحِد')">
+          <div class="digit">١</div>
+          <div class="ar">وَاحِد</div>
+          <div class="translit">wāḥid</div>
+        </div>
+        <div class="num-item" onclick="speak('اِثْنَان')">
+          <div class="digit">٢</div>
+          <div class="ar">اِثْنَان</div>
+          <div class="translit">ithnān</div>
+        </div>
+        <div class="num-item" onclick="speak('ثَلَاثَة')">
+          <div class="digit">٣</div>
+          <div class="ar">ثَلَاثَة</div>
+          <div class="translit">thalāthah</div>
+        </div>
+        <div class="num-item" onclick="speak('أَرْبَعَة')">
+          <div class="digit">٤</div>
+          <div class="ar">أَرْبَعَة</div>
+          <div class="translit">arbaʿah</div>
+        </div>
+        <div class="num-item" onclick="speak('خَمْسَة')">
+          <div class="digit">٥</div>
+          <div class="ar">خَمْسَة</div>
+          <div class="translit">khamsah</div>
+        </div>
+        <div class="num-item" onclick="speak('سِتَّة')">
+          <div class="digit">٦</div>
+          <div class="ar">سِتَّة</div>
+          <div class="translit">sittah</div>
+        </div>
+        </div>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">🎧</span> 语音训练 · الأَصْوَات</h2>
+    <div class="content-card">
+      <h3>🔊 字母 «ح» (حَاء (Ḥāʾ))</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">发音要领</p>
+<div class="cultural-highlight"><h5>🎯 发音要领</h5><p style="font-size:0.9rem;line-height:1.8;">«ح» 是咽部清摩擦音，比汉语拼音 h 的位置更深。咽喉收紧，气流从狭窄的咽腔摩擦而出。与 خ 的区别：خ 在小舌，ح 在咽部。练习：想象对着镜子哈气让镜面起雾的感觉，然后收紧喉咙。</p></div>
+      <p style="margin:12px 0 8px;font-weight:600;">🔹 请跟读以下含 «ح» 的单词：</p>
+      <div class="sound-practice">
+        <div class="sound-item" onclick="speak('حَمَّام')">حَمَّام</div>
+        <div class="sound-item" onclick="speak('حَقِيبَة')">حَقِيبَة</div>
+        <div class="sound-item" onclick="speak('حَائِط')">حَائِط</div>
+        <div class="sound-item" onclick="speak('حَدِيقَة')">حَدِيقَة</div>
+        <div class="sound-item" onclick="speak('مِفْتَاح')">مِفْتَاح</div>
+        <div class="sound-item" onclick="speak('مَسْجِد')">مَسْجِد</div>
+      </div>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">✍️</span> 书写练习 · الكِتَابَة</h2>
+    <div class="content-card">
+      <h3>🖌️ 本课字母 · الحُرُوف</h3>
+      <p style="font-size:0.85rem;color:var(--ar-text-light);margin-bottom:12px;">点击字母卡片查看写法，从右向左书写</p>
+<div class="writing-grid">
+          <div class="letter-card">
+            <div class="letter-ar">ج</div>
+            <div class="letter-tx">جِيم<br><em>j</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ح</div>
+            <div class="letter-tx">حَاء<br><em>ḥ</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">خ</div>
+            <div class="letter-tx">خَاء<br><em>kh</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">د</div>
+            <div class="letter-tx">دَال<br><em>d</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ذ</div>
+            <div class="letter-tx">ذَال<br><em>dh</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ر</div>
+            <div class="letter-tx">رَاء<br><em>r</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ز</div>
+            <div class="letter-tx">زَاي<br><em>z</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">س</div>
+            <div class="letter-tx">سِين<br><em>s</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ش</div>
+            <div class="letter-tx">شِين<br><em>sh</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ص</div>
+            <div class="letter-tx">صَاد<br><em>ṣ</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ض</div>
+            <div class="letter-tx">ضَاد<br><em>ḍ</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ط</div>
+            <div class="letter-tx">طَاء<br><em>ṭ</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ظ</div>
+            <div class="letter-tx">ظَاء<br><em>ẓ</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">ع</div>
+            <div class="letter-tx">عَيْن<br><em>ʿ</em></div>
+          </div>
+          <div class="letter-card">
+            <div class="letter-ar">غ</div>
+            <div class="letter-tx">غَيْن<br><em>gh</em></div>
+          </div>
+        </div>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <section class="page-section">
+    <h2><span class="section-icon">☪</span> 文化注释 · مُلَاحَظَات ثَقَافِيَّة</h2>
+    <div class="cultura-box">
+      <h4>🏺 阿拉伯传统住宅的隐私文化</h4>
+      <p style="font-size:0.9rem;line-height:1.9;">传统阿拉伯房屋围绕内院（فِنَاء / حَوْش）建造以保护家庭隐私。客厅（مَجْلِس）是接待客人的重要空间。地板铺地毯（سَجَّادَة），客人脱鞋入内。在沙特等海湾国家，男女会客室通常分开（مَجْلِس الرِّجَال vs مَجْلِس النِّسَاء），反映了对隐私和性别隔离的重视。</p>
+    </div>
+    <div class="cultura-box">
+      <h4>🏺 「بسم الله」进入与离开</h4>
+      <p style="font-size:0.9rem;line-height:1.9;">穆斯林进房屋时念「بِسْمِ اللهِ」（以真主之名），离开时念「بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللهِ」（以真主之名，我托靠真主）。孩子从小就被教导这个习惯，将日常行为与信仰结合。</p>
+    </div>
+    <div class="section-divider">◈ ◈ ◈</div>
+  </section>
+  <div class="nav-buttons">
+    <a href="D:\workbuddy工作区\2026-07-05-17-02-23\arabic-book\unit-2.html" class="nav-btn nav-btn-secondary">← 上一单元 · الأُسْرَة</a>
+    <a href="unit-4.html" class="nav-btn nav-btn-primary">下一单元 · السَّكَن →</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <p>العربية بين يديك · 阿拉伯语在你手中 · 第一册 第一部分</p>
+    <p style="margin-top:4px;">الوحدة الثالثة: السَّكَن — 第三单元：居住</p>
+  </footer>
+  <script src="js/arabic-speech.js"></script>
+</body>
+</html>
