@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>语法总表 | 阿拉伯语在你手中</title>
+  <link rel="stylesheet" href="css/arabic-styles.css">
+  <style>
+    .quiz-section{background:var(--ar-bg-card);border:1px solid var(--ar-border-light);border-radius:var(--ar-radius);padding:24px;margin-bottom:20px}
+    .quiz-section h3{color:var(--ar-green-dark);margin-bottom:12px;border-bottom:1px solid var(--ar-border);padding-bottom:8px}
+    .quiz-item{margin:16px 0;padding:12px 16px;background:var(--ar-bg-alt);border-radius:var(--ar-radius-sm)}
+    .quiz-item .q{font-weight:600;color:var(--ar-text-dark);margin-bottom:8px}
+    .quiz-item .ar{font-family:var(--font-arabic);font-size:1.2rem;direction:rtl;color:var(--ar-text-dark);margin:6px 0}
+    .quiz-item .opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .quiz-item .opts span{padding:6px 16px;background:var(--ar-bg-card);border:1px solid var(--ar-border);border-radius:20px;font-size:.88rem;cursor:default}
+    .quiz-item .opts span.correct{background:var(--ar-green-pale);border-color:var(--ar-green);color:var(--ar-green-dark)}
+    .quiz-item .answer{margin-top:8px;font-size:.82rem;color:var(--ar-green)}
+    .grammar-topic{margin:24px 0;padding:16px 20px;background:var(--ar-bg-card);border:1px solid var(--ar-border-light);border-radius:var(--ar-radius)}
+    .grammar-topic h3{color:var(--ar-green-dark);margin-bottom:6px}
+    .grammar-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.9rem}
+    .grammar-table td,.grammar-table th{padding:8px 12px;border:1px solid var(--ar-border);text-align:center}
+    .grammar-table th{background:var(--ar-green);color:#fff;font-size:.82rem}
+    .grammar-table .ar{font-family:var(--font-arabic);font-size:1.1rem;direction:rtl}
+    .vocab-letter{margin:24px 0}
+    .vocab-letter h3{color:var(--ar-green-dark);font-size:1.3rem;margin-bottom:8px;border-bottom:2px solid var(--ar-gold);padding-bottom:6px}
+    .listening-dialogue{margin:20px 0;padding:16px 20px;background:var(--ar-bg-alt);border-radius:var(--ar-radius-sm);border-left:3px solid var(--ar-gold)}
+    .listening-dialogue h3{color:var(--ar-green-dark);margin-bottom:8px}
+    .listening-dialogue .line{display:flex;gap:12px;margin:4px 0;font-size:.9rem}
+    .listening-dialogue .line .role{font-weight:600;color:var(--ar-green);min-width:70px}
+    .listening-dialogue .line .ar{font-family:var(--font-arabic);direction:rtl;flex:1;color:var(--ar-text-dark)}
+    .listening-dialogue .line .zh{color:var(--ar-text-light);flex:1;font-size:.85rem}
+    footer{text-align:center;padding:40px 24px;background:var(--ar-green-dark);color:rgba(250,250,245,.6);margin-top:40px}
+  </style>
+</head>
+<body>
+  <div class="scroll-progress"></div>
+  <nav class="top-nav">
+    <a href="index.html" class="nav-logo"><span class="logo-icon">ع</span><span>العربية بين يديك</span></a>
+    <button class="nav-toggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="unit-1.html">第一单元</a></li>
+      <li><a href="resources-grammar.html">语法总表</a></li>
+    </ul>
+  </nav>
+  <header class="unit-hero">
+    <div class="unit-hero-content">
+      <div class="level-badge"><span>📘</span><span>المستوى المبتدئ · Beginner A1</span></div>
+      <h1>مُلَخَّص نَحْوِيّ</h1>
+      <p class="unit-chinese-title">语法总表 · 第一册全部语法要点</p>
+    </div>
+  </header>
+  <section class="page-section">
+
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 1: 指示代词</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="هَذَا">هَذَا</span></td>
+          <td>这个（阳性）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هَذَا طَالِبٌ. (这是一位男学生)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="هَذِهِ">هَذِهِ</span></td>
+          <td>这个（阴性）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هَذِهِ طَالِبَةٌ. (这是一位女学生)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 1: 疑问词 I</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="هَلْ">هَلْ</span></td>
+          <td>吗（一般疑问）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هَلْ أَنْتَ طَالِبٌ؟ (你是学生吗？)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="مَا">مَا</span></td>
+          <td>什么</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">مَا اسْمُكَ؟ (你叫什么名字？)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="مَنْ">مَنْ</span></td>
+          <td>谁</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">مَنْ هَذَا؟ (这是谁？)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="نَعَم / لَا">نَعَم / لَا</span></td>
+          <td>是 / 不</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">نَعَم، أَنَا طَالِبٌ. (是的，我是学生。)/ لَا، لَسْتُ طَالِبًا. (不，我不是学生。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 1: 名词句</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أَنَا + 名词">أَنَا + 名词</span></td>
+          <td>我是……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أَنَا طَالِبٌ. (我是学生。)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="هُوَ / هِيَ">هُوَ / هِيَ</span></td>
+          <td>他/她</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هُوَ طَبِيبٌ. (他是医生。)/ هِيَ طَبِيبَةٌ. (她是医生。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 1: 数字 1-6</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="وَاحِد / اِثْنَان / ثَلَاثَة / أَرْبَعَة / خَمْسَة / سِتَّة">وَاحِد / اِثْنَان / ثَلَاثَة / أَرْبَعَة / خَمْسَة / سِتَّة</span></td>
+          <td>1-6（阳性形式）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 2: 疑问词 مَنْ 扩展</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="مَنْ هَذَا؟">مَنْ هَذَا؟</span></td>
+          <td>这是谁？（男）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هَذَا أَخِي. (这是我的兄弟。)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="مَنْ هَذِهِ؟">مَنْ هَذِهِ؟</span></td>
+          <td>这是谁？（女）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هَذِهِ أُخْتِي. (这是我的姐妹。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 2: 属格结构（الإضافة）</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="名词 + ي">名词 + ي</span></td>
+          <td>我的……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">وَالِدِي (我的父亲)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="名词 + كَ (阳) / كِ (阴)">名词 + كَ (阳) / كِ (阴)</span></td>
+          <td>你的……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">وَالِدُكَ (你的父亲_男) / وَالِدُكِ (你的父亲_女)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="名词 + هُ / هَا">名词 + هُ / هَا</span></td>
+          <td>他的/她的……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أَخُوهُ (他的兄弟) / أُخْتُهَا (她的姐妹)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="名词 + نَا">名词 + نَا</span></td>
+          <td>我们的……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">بَيْتُنَا (我们的家)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 2: 询问拥有</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="هَلْ لَكَ ...؟">هَلْ لَكَ ...؟</span></td>
+          <td>你有……吗？(男)</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هَلْ لَكَ أَخٌ؟ (你有兄弟吗？)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="لِي / لَكَ / لَهُ / لَهَا">لِي / لَكَ / لَهُ / لَهَا</span></td>
+          <td>我有/你有/他有/她有</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">لِي أَخٌ. (我有一个兄弟。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 2: 数字 7-13</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="سَبْعَة / ثَمَانِيَة / تِسْعَة / عَشَرَة">سَبْعَة / ثَمَانِيَة / تِسْعَة / عَشَرَة</span></td>
+          <td>7-10</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أَحَدَ عَشَرَ / اثْنَا عَشَرَ / ثَلَاثَةَ عَشَرَ">أَحَدَ عَشَرَ / اثْنَا عَشَرَ / ثَلَاثَةَ عَشَرَ</span></td>
+          <td>11-13</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 3: 方向介词</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="فِي">فِي</span></td>
+          <td>在……里面</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">فِي الْغُرْفَةِ (在房间里)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="عَلَى">عَلَى</span></td>
+          <td>在……上面</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">عَلَى الْمَكْتَبِ (在书桌上)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="تَحْتَ">تَحْتَ</span></td>
+          <td>在……下面</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">تَحْتَ السَّرِيرِ (在床下)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أَمَامَ">أَمَامَ</span></td>
+          <td>在……前面</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أَمَامَ الْبَيْتِ (在房子前)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="وَرَاءَ">وَرَاءَ</span></td>
+          <td>在……后面</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">وَرَاءَ الْمَسْجِدِ (在清真寺后)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 3: 疑问词 أَيْنَ / مَاذَا</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أَيْنَ ...؟">أَيْنَ ...؟</span></td>
+          <td>……在哪儿？</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أَيْنَ الْكِتَابُ؟ (书在哪里？)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="مَاذَا فِي ...؟">مَاذَا فِي ...؟</span></td>
+          <td>……里有什么？</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">مَاذَا فِي الْغُرْفَةِ؟ (房间里有什么？)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 3: 双数（المثنى）</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="名词 + انِ / يْنِ">名词 + انِ / يْنِ</span></td>
+          <td>双数形式</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">كُرْسِيَّانِ (两把椅子) — 单数: كُرْسِيٌّ (一把椅子)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="كِتَابَانِ">كِتَابَانِ</span></td>
+          <td>两本书</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="سَرِيرَانِ">سَرِيرَانِ</span></td>
+          <td>两张床</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 4: 现在时变位 (فعل مضارع)</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أَفْعَلُ">أَفْعَلُ</span></td>
+          <td>我做</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أَقْرَأُ (我读)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="نَفْعَلُ">نَفْعَلُ</span></td>
+          <td>我们做</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">نَقْرَأُ (我们读)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="تَفْعَلُ">تَفْعَلُ</span></td>
+          <td>你做（阳）/ 她做</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">تَذْهَبُ (你去/她去)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="تَفْعَلِينَ">تَفْعَلِينَ</span></td>
+          <td>你做（阴）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">تَذْهَبِينَ (你去_女)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="يَفْعَلُ">يَفْعَلُ</span></td>
+          <td>他做</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">يَذْهَبُ (他去)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 4: 时间疑问词 مَتَى</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="مَتَى ...؟">مَتَى ...؟</span></td>
+          <td>什么时候？</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">مَتَى تَذْهَبُ إِلَى الْعَمَلِ؟ (你什么时候去上班？)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="السَّاعَةَ + 序数词">السَّاعَةَ + 序数词</span></td>
+          <td>在……点</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">السَّاعَةَ الثَّامِنَةَ (在八点)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 4: 将来标志 سَـ</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="سَ + 现在时动词">سَ + 现在时动词</span></td>
+          <td>将要做……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">سَأَذْهَبُ (我将去)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="سَوْفَ + 现在时">سَوْفَ + 现在时</span></td>
+          <td>将会……（更远将来）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">سَوْفَ نَلْتَقِي (我们将会见面)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 4: 一周七天</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="الْأَحَد / الاثْنَيْن / الثُّلَاثَاء / الْأَرْبِعَاء / الْخَمِيس / الْجُمُعَة / السَّبْت">الْأَحَد / الاثْنَيْن / الثُّلَاثَاء / الْأَرْبِعَاء / الْخَمِيس / الْجُمُعَة / السَّبْت</span></td>
+          <td>星期日-星期六</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 5: 否定词 لَيْسَ</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="لَيْسَ + 名词句">لَيْسَ + 名词句</span></td>
+          <td>不是……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هَذَا لَيْسَ خُبْزًا. (这不是面包。)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="لَيْسَ فِي ...">لَيْسَ فِي ...</span></td>
+          <td>里面没有……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">لَيْسَ فِي الْغُرْفَةِ أَحَدٌ. (房间里没有人。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 5: 动词 أُرِيدُ / أُحِبُّ</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أُرِيدُ + 泛指名词">أُرِيدُ + 泛指名词</span></td>
+          <td>我想要……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أُرِيدُ مَاءً. (我想要水。)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أُحِبُّ + 定指名词">أُحِبُّ + 定指名词</span></td>
+          <td>我喜欢……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أُحِبُّ الْقَهْوَةَ. (我喜欢咖啡。)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أُفَضِّلُ">أُفَضِّلُ</span></td>
+          <td>我偏好……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أُفَضِّلُ السَّمَكَ. (我喜欢鱼。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 6: 数量疑问词 كَمْ</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="كَمْ + 单数宾格">كَمْ + 单数宾格</span></td>
+          <td>多少……？</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">كَمْ صَلَاةً فِي الْيَوْمِ؟ (每天几次礼拜？)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="كَمِ السَّاعَةُ؟">كَمِ السَّاعَةُ؟</span></td>
+          <td>几点了？</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">السَّاعَةُ الثَّالِثَةُ. (三点。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 6: 必须表达 لَا بُدَّ</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="لَا بُدَّ أَنْ + 虚拟式">لَا بُدَّ أَنْ + 虚拟式</span></td>
+          <td>必须……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">لَا بُدَّ أَنْ أَذْهَبَ. (我必须去。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 7: 命令式（فعل الأمر）</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="اِفْتَحْ!">اِفْتَحْ!</span></td>
+          <td>打开！(男)</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="اِفْتَحِي!">اِفْتَحِي!</span></td>
+          <td>打开！(女)</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="اِفْتَحُوا!">اِفْتَحُوا!</span></td>
+          <td>打开！(你们)</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="لَا تَفْتَحْ!">لَا تَفْتَحْ!</span></td>
+          <td>不要打开！</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 7: 不完全动词 كَانَ / يَكُونُ</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="كَانَ + 宾格谓语">كَانَ + 宾格谓语</span></td>
+          <td>过去是……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">كَانَ الطَّالِبُ فِي الْفَصْلِ. (学生之前在教室。)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="يَكُونُ + 宾格谓语">يَكُونُ + 宾格谓语</span></td>
+          <td>现在是/将是……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">يَكُونُ الطَّالِبُ فِي الْمَكْتَبَةِ. (学生在图书馆。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 7: 转折词 لَكِنَّ / لَكِنْ</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="لَكِنَّ + 名词">لَكِنَّ + 名词</span></td>
+          <td>但是……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">هِيَ صَعْبَةٌ لَكِنَّهَا جَمِيلَةٌ. (它难但美。)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="لَكِنْ + 动词">لَكِنْ + 动词</span></td>
+          <td>但是……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">ذَهَبْتُ لَكِنْ لَمْ أَجِدْهُ. (我去了但没找到他。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 8: 选择疑问词 أَيُّ</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أَيُّ + 属格名词">أَيُّ + 属格名词</span></td>
+          <td>哪个……？</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أَيُّ يَوْمٍ تُفَضِّلُ؟ (你喜欢哪一天？)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 8: 过去时基础（الماضي）</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="فَعَلْتُ">فَعَلْتُ</span></td>
+          <td>我做了</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">عَمِلْتُ (我工作了)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="فَعَلْتَ / فَعَلْتِ">فَعَلْتَ / فَعَلْتِ</span></td>
+          <td>你做了（男/女）</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">ذَهَبْتَ (你去了_男) / ذَهَبْتِ (你去了_女)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="فَعَلَ / فَعَلَتْ">فَعَلَ / فَعَلَتْ</span></td>
+          <td>他做了 / 她做了</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">ذَهَبَ (他去了) / ذَهَبَتْ (她去了)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="فَعَلْنَا">فَعَلْنَا</span></td>
+          <td>我们做了</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">ذَهَبْنَا (我们去了)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grammar-topic">
+      <h3>📌 الوحدة 8: أَنْ 从句</h3>
+      <table class="grammar-table">
+        <thead><tr><th>العربية</th><th>中文释义</th><th>例句 / 说明</th></tr></thead>
+        <tbody>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="أُرِيدُ أَنْ + 虚拟式">أُرِيدُ أَنْ + 虚拟式</span></td>
+          <td>我想做……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">أُرِيدُ أَنْ أَكونَ طَبِيبًا. (我想成为医生。)</td></tr>
+<tr>
+          <td class="ar"><span class="click-speak" data-ar="لَا بُدَّ أَنْ + 虚拟式">لَا بُدَّ أَنْ + 虚拟式</span></td>
+          <td>必须……</td>
+          <td style="font-size:.85rem;color:var(--ar-text-light)">لَا بُدَّ أَنْ تَذْهَبَ. (你必须去。)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+  <footer>
+    <div class="footer-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <p>العربية بين يديك · 阿拉伯语在你手中 · 第一册 第一部分</p>
+    <p style="margin-top:4px">语法总表 — 涵盖 8 个单元全部语法点</p>
+  </footer>
+  <script src="js/arabic-speech.js"></script>
+</body>
+</html>
