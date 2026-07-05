@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>العربية بين يديك — 阿拉伯语在你手中</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Noto Sans SC','Microsoft YaHei',sans-serif;background:linear-gradient(135deg,#0D5C2E,#1A3C6D);min-height:100vh;display:flex;align-items:center;justify-content:center;color:#FAFAF5}
+    .container{max-width:600px;padding:40px 24px;text-align:center}
+    h1{font-size:2.2rem;margin-bottom:8px;color:#C9A84C}
+    .sub{font-size:1rem;opacity:0.7;margin-bottom:32px}
+    .books{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .book{padding:20px 16px;border-radius:12px;text-decoration:none;transition:all .3s;border:1px solid rgba(201,168,76,.3)}
+    .book:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.3);border-color:#C9A84C}
+    .book.active{background:rgba(201,168,76,.15);border-color:#C9A84C}
+    .book.soon{opacity:0.4;cursor:not-allowed;pointer-events:none;background:rgba(255,255,255,.05)}
+    .book-num{font-size:.75rem;opacity:0.5;margin-bottom:4px}
+    .book-title{font-size:1rem;font-weight:600;color:#C9A84C;margin-bottom:2px}
+    .book-desc{font-size:.78rem;opacity:0.6}
+    footer{margin-top:40px;font-size:.75rem;opacity:0.4}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>العربية بين يديك</h1>
+    <p class="sub">阿拉伯语在你手中 · 在线教材</p>
+    <div class="books">
+      <a href="arabic-book-01/index.html" class="book active">
+        <div class="book-num">📘 第一册 · Book 1</div>
+        <div class="book-title">كتاب الطالب الأول</div>
+        <div class="book-desc">8 单元 · 初级 A1</div>
+      </a>
+      <div class="book soon">
+        <div class="book-num">📘 第二册 · Book 2</div>
+        <div class="book-title">كتاب الطالب الثاني</div>
+        <div class="book-desc">即将上线</div>
+      </div>
+      <div class="book soon">
+        <div class="book-num">📘 第三册 · Book 3</div>
+        <div class="book-title">كتاب الطالب الثالث</div>
+        <div class="book-desc">即将上线</div>
+      </div>
+      <div class="book soon">
+        <div class="book-num">📘 第四册 · Book 4</div>
+        <div class="book-title">كتاب الطالب الرابع</div>
+        <div class="book-desc">即将上线</div>
+      </div>
+    </div>
+    <footer>العربية بين يديك · 为中文母语者优化</footer>
+  </div>
+</body>
+</html>
