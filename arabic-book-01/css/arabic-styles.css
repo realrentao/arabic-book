@@ -536,6 +536,21 @@ body {
   opacity: 0.7;
 }
 
+/* 播放中高亮 */
+.click-speak.playing,
+.sound-item.playing,
+.num-item.playing {
+  background: linear-gradient(120deg, rgba(201,168,76,0.25), rgba(249,217,118,0.15)) !important;
+  color: var(--ar-green-dark) !important;
+  text-shadow: 0 0 6px rgba(201,168,76,0.3) !important;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(201,168,76,0.15);
+  transform: scale(1.03);
+  transition: all 0.2s ease;
+  cursor: default;
+}
+tr.audio-playing { background: rgba(201,168,76,0.06) !important; }
+
 /* ===== Dialogue Table ===== */
 .dialog-table {
   width: 100%;
